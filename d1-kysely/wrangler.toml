@@ -1,0 +1,9 @@
+name = "d1-kysely"
+main = "src/worker.ts"
+compatibility_date = "2023-10-01"
+
+[[d1_databases]]
+binding = "DB" # i.e. available in your Worker on env.DB
+database_name = "prisma-kysely-sample"
+database_id = "4b7d8add-3287-47eb-b996-f12017fc2a7c"
+migrations_dir = ".wrangler/migrations"
