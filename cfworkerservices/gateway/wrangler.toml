@@ -1,0 +1,7 @@
+name = "gateway"
+main = "src/index.ts"
+compatibility_date = "2023-01-29"
+
+services = [
+  { binding = "app", service = "app" }
+]
