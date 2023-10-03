@@ -1,0 +1,10 @@
+name = "hello-workerqueue"
+main = "src/worker.ts"
+compatibility_date = "2023-05-21"
+
+[[queues.producers]]
+queue = "queuez"
+binding = "MY_QUEUE"
+
+[[queues.consumers]]
+queue = "queuez"
