@@ -1,0 +1,26 @@
+name = "cacheworker"
+main = "src/worker.ts"
+compatibility_date = "2023-08-29"
+
+
+# Bucket binding - For more information: https://developers.cloudflare.com/workers/runtime-apis/kv#bucket
+[[r2_buckets]]
+binding = "CACHE_BUCKET"
+bucket_name  = "cache-bucket"
+preview_bucket_name  = "p-cache-bucket"
+
+# # Service binding - For more information: https://developers.cloudflare.com/workers/platform/services
+# [[routes]]
+# binding = "MY_SERVICE"
+# pattern = "/api/*"
+# script = "api.js"
+
+
+# [env.production]
+# MY_VARIABLE = "production_value"
+
+# [env.staging]
+# MY_VARIABLE = "staging_value"
+
+# [env.shared]
+# SHARED_VARIABLE = "shared_value"
