@@ -1,0 +1,10 @@
+name = "hello-ai-worker"
+main = "src/worker.ts"
+compatibility_date = "2023-10-04"
+
+[[vectorize]]
+binding = "TEXT_EMBEDDINGS" # available within your Worker on env.VECTORIZE_INDEX
+index_name = "embeddings-index"
+
+[ai]
+binding = "AI"
