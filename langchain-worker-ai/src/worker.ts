@@ -18,7 +18,8 @@ export interface Env {
 
 export default {
 	async fetch(request: Request, env: Env) {
-		const { pathname } = new URL(request.url);
+		const url = new URL(request.url);
+		const { pathname } = url;
 		if (pathname.startsWith("/favicon")) {
 			// 404 for favicon
 			return new Response('', { status: 404 });
@@ -35,7 +36,7 @@ export default {
 		if (pathname === "/search") {
 			const ai = new Ai(env.AI);
 
-			const query = "Tell me about encryption in QUIC"
+			const query = url.searchParams.get("q") ?? "Tell me about encryption in QUIC"
 			const results = await store.similaritySearch(query, 5);
 
 			const pcs = results.map((result) => result.pageContent.replace("\n", "")).join("\n");
