@@ -45,10 +45,11 @@ export default {
 			const messages = [
 				{
 					role: 'system', content: `
-					You are the expert and should answer questions.
-					Please refer to the supplementary information.
+					You are the expert. Answer the user's question.
+					Supplementary information is provided separately from the user's question.
+					Use it if necessary.
 				` },
-				{ role: 'system', content: "supplement\n" + pcs },
+				{ role: 'system', content: "Supplementary information is below.\n" + pcs },
 				{ role: 'user', content: query },
 			];
 			const response = await ai.run('@cf/meta/llama-2-7b-chat-int8', { messages });
