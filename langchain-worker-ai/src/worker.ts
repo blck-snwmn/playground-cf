@@ -35,15 +35,17 @@ export default {
 		if (pathname === "/search") {
 			const ai = new Ai(env.AI);
 
-			const query = "What is Stream"
+			const query = "Tell me about encryption in QUIC"
 			const results = await store.similaritySearch(query, 5);
-			console.log("results:", results);
 
-			const pcs = results.map((result) => result.pageContent).join("\n");
+			const pcs = results.map((result) => result.pageContent.replace("\n", "")).join("\n");
+			console.log("results:", pcs);
 
 			const messages = [
-				{ role: 'user', content: query },
+				{ role: 'system', content: "You are a professional." },
+				{ role: 'system', content: "You will be provided with a supplement to the question, which you can use to answer the question." },
 				{ role: 'system', content: "supplement\n" + pcs },
+				{ role: 'user', content: query },
 			];
 			const response = await ai.run('@cf/meta/llama-2-7b-chat-int8', { messages });
 			return Response.json(response);
@@ -52,10 +54,7 @@ export default {
 		if (pathname === "/load") {
 			console.log("Loading documents...");
 			const loader = new CheerioWebBaseLoader(
-				"https://datatracker.ietf.org/doc/html/rfc9000",
-				{
-					selector: "#content"
-				},
+				"https://en.wikipedia.org/wiki/QUIC",
 			);
 			const docs = await loader.loadAndSplit();
 			// docs.forEach((doc) => {
