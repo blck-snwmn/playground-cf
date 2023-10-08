@@ -43,8 +43,11 @@ export default {
 			console.log("results:", pcs);
 
 			const messages = [
-				{ role: 'system', content: "You are a professional." },
-				{ role: 'system', content: "You will be provided with a supplement to the question, which you can use to answer the question." },
+				{
+					role: 'system', content: `
+					You are the expert and should answer questions.
+					Please refer to the supplementary information.
+				` },
 				{ role: 'system', content: "supplement\n" + pcs },
 				{ role: 'user', content: query },
 			];
