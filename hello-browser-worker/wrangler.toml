@@ -1,0 +1,8 @@
+name = "hello-browser-worker"
+main = "src/worker.ts"
+compatibility_date = "2023-07-21"
+
+compatibility_flags = [ "nodejs_compat" ]
+workers_dev = true
+
+browser = { binding = "MYBROWSER", type = "browser" }
