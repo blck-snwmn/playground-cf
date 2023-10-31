@@ -1,0 +1,9 @@
+name = "envsample"
+main = "src/worker.ts"
+compatibility_date = "2023-10-30"
+
+[env.dev]
+vars = { MY_VARIABLE = "production_value" }
+
+[env.staging]
+vars = { MY_VARIABLE = "staging_value" }
