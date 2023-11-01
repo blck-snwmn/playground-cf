@@ -210,6 +210,18 @@ importers:
         specifier: ^3.10.1
         version: 3.10.1
 
+  stream-manager:
+    devDependencies:
+      '@cloudflare/workers-types':
+        specifier: ^4.20230419.0
+        version: 4.20231002.0
+      typescript:
+        specifier: ^5.0.4
+        version: 5.2.2
+      wrangler:
+        specifier: ^3.0.0
+        version: 3.11.0
+
 packages:
 
   /@antfu/ni@0.21.8:
