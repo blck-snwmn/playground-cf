@@ -38,5 +38,23 @@ app.get("/live", async (c) => {
 	return c.json(json)
 })
 
+app.post("/live", async (c) => {
+	const resp = await fetch(c.var.url, {
+		method: "POST",
+		headers: {
+			"Authorization": `Bearer ${c.env.AUTH_TOKEN}`,
+			"Content-Type": "application/json",
+		},
+		body: JSON.stringify({
+			meta: {
+				name: "test",
+				description: "test description",
+			},
+			mode: "off"
+		}),
+	})
+	const json = await resp.json()
+	return c.json(json)
+})
 
 export default app
