@@ -23,12 +23,12 @@ app.use("*", async (c, next) => {
 	await next()
 })
 
-app.use("/live", async (c, next) => {
+app.use("/lives", async (c, next) => {
 	c.set("url", `https://api.cloudflare.com/client/v4/accounts/${c.env.ACCOUNT_ID}/stream/live_inputs`)
 	await next()
 })
 
-app.get("/live", async (c) => {
+app.get("/lives", async (c) => {
 	const resp = await fetch(c.var.url, {
 		headers: {
 			"Authorization": `Bearer ${c.env.AUTH_TOKEN}`
@@ -38,7 +38,7 @@ app.get("/live", async (c) => {
 	return c.json(json)
 })
 
-app.post("/live", async (c) => {
+app.post("/lives", async (c) => {
 	const resp = await fetch(c.var.url, {
 		method: "POST",
 		headers: {
