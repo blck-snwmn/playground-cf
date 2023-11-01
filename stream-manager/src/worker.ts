@@ -1,32 +1,42 @@
-/**
- * Welcome to Cloudflare Workers! This is your first worker.
- *
- * - Run `npm run dev` in your terminal to start a development server
- * - Open a browser tab at http://localhost:8787/ to see your worker in action
- * - Run `npm run deploy` to publish your worker
- *
- * Learn more at https://developers.cloudflare.com/workers/
- */
+import { Hono } from "hono";
 
-export interface Env {
-	// Example binding to KV. Learn more at https://developers.cloudflare.com/workers/runtime-apis/kv/
-	// MY_KV_NAMESPACE: KVNamespace;
-	//
-	// Example binding to Durable Object. Learn more at https://developers.cloudflare.com/workers/runtime-apis/durable-objects/
-	// MY_DURABLE_OBJECT: DurableObjectNamespace;
-	//
-	// Example binding to R2. Learn more at https://developers.cloudflare.com/workers/runtime-apis/r2/
-	// MY_BUCKET: R2Bucket;
-	//
-	// Example binding to a Service. Learn more at https://developers.cloudflare.com/workers/runtime-apis/service-bindings/
-	// MY_SERVICE: Fetcher;
-	//
-	// Example binding to a Queue. Learn more at https://developers.cloudflare.com/queues/javascript-apis/
-	// MY_QUEUE: Queue;
+type Bindings = {
+	ACCOUNT_ID: string
+	AUTH_TOKEN: string
+}
+type Variables = {
+	url: string
 }
 
-export default {
-	async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
-		return new Response('Hello World!');
-	},
-};
+const app = new Hono<{ Bindings: Bindings, Variables: Variables }>()
+app.use("*", async (c, next) => {
+	if (!c.env.AUTH_TOKEN) {
+		return c.json({ error: "internal server error" }, {
+			status: 500,
+		})
+	}
+	if (!c.env.ACCOUNT_ID) {
+		return c.json({ error: "internal server error" }, {
+			status: 500,
+		})
+	}
+	await next()
+})
+
+app.use("/live", async (c, next) => {
+	c.set("url", `https://api.cloudflare.com/client/v4/accounts/${c.env.ACCOUNT_ID}/stream/live_inputs`)
+	await next()
+})
+
+app.get("/live", async (c) => {
+	const resp = await fetch(c.var.url, {
+		headers: {
+			"Authorization": `Bearer ${c.env.AUTH_TOKEN}`
+		}
+	})
+	const json = await resp.json()
+	return c.json(json)
+})
+
+
+export default app
