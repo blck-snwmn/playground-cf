@@ -57,4 +57,45 @@ app.post("/lives", async (c) => {
 	return c.json(json)
 })
 
+app.use("/videos/*", async (c, next) => {
+	c.set("url", `https://api.cloudflare.com/client/v4/accounts/${c.env.ACCOUNT_ID}/stream`)
+	await next()
+})
+
+app.get("/videos", async (c) => {
+	const resp = await fetch(c.var.url, {
+		headers: {
+			"Authorization": `Bearer ${c.env.AUTH_TOKEN}`
+		}
+	})
+	const json = await resp.json()
+	return c.json(json)
+})
+
+app.delete("/videos/all", async (c) => {
+	const resp = await fetch(c.var.url, {
+		headers: {
+			"Authorization": `Bearer ${c.env.AUTH_TOKEN}`
+		}
+	})
+	const json = await resp.json() as { result: { uid: string }[] }
+
+	const newJson = json.result.map(async (video) => {
+		const resp = await fetch(`${c.var.url}/${video.uid}`, {
+			method: "DELETE",
+			headers: {
+				"Authorization": `Bearer ${c.env.AUTH_TOKEN}`
+			}
+		})
+		if (resp.status === 200) {
+			return { uid: video.uid, status: "success" }
+		}
+		return { uid: video.uid, status: "failed" }
+	})
+	const respAll = await Promise.all(newJson)
+	console.log(respAll)
+	return c.json(respAll)
+})
+
+
 export default app
