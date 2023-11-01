@@ -7,12 +7,12 @@
     "start": "wrangler dev"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20231002.0",
+    "@cloudflare/workers-types": "^4.20231025.0",
     "kysely": "^0.26.3",
     "kysely-d1": "^0.3.0",
-    "prisma": "^5.4.1",
+    "prisma": "^5.5.2",
     "prisma-kysely": "^1.7.1",
     "typescript": "^5.2.2",
-    "wrangler": "^3.10.1"
+    "wrangler": "^3.15.0"
   }
 }
