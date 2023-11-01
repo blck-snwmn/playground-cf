@@ -211,6 +211,10 @@ importers:
         version: 3.10.1
 
   stream-manager:
+    dependencies:
+      hono:
+        specifier: ^3.9.1
+        version: 3.9.1
     devDependencies:
       '@cloudflare/workers-types':
         specifier: ^4.20230419.0
@@ -1761,6 +1765,11 @@ packages:
       is-stream: 2.0.1
       type-fest: 0.8.1
     dev: true
+
+  /hono@3.9.1:
+    resolution: {integrity: sha512-z3nM9CjNZ8PRAH6NNntk4ESKW2POEbGanhK1QpYdQ1MOYRzZPSEE8B5mqw8bYEPa7qIQxX0vtlv7XOxtwFbosg==}
+    engines: {node: '>=16.0.0'}
+    dev: false
 
   /hosted-git-info@2.8.9:
     resolution: {integrity: sha512-mxIDAb9Lsm6DoOJ7xH+5+X4y1LU/4Hi50L9C5sIswK3JzULS4bwk1FvjdBgvYR4bzT4tuUQiC15FE2f5HbLvYw==}
