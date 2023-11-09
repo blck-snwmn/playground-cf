@@ -5,5 +5,9 @@ compatibility_date = "2023-10-30"
 [env.dev]
 vars = { MY_VARIABLE = "developmet_value" }
 
+[env.tail]
+vars = { MY_VARIABLE = "tail_value" }
+tail_consumers = [{service = "tailworker"}]
+
 [env.staging]
 vars = { MY_VARIABLE = "staging_value" }
