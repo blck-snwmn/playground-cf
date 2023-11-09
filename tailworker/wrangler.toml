@@ -5,3 +5,7 @@ compatibility_date = "2023-11-08"
 kv_namespaces = [
     { binding = "TAIL_SAMPLE", id = "89dce8397e7e4dcbaa71810befba3cd5" }
 ]
+
+[[queues.producers]]
+queue = "slackqueue"
+binding = "SQUEUE"
