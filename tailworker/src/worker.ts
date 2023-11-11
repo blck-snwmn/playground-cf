@@ -4,6 +4,10 @@ export interface Env {
 }
 
 export default {
+	async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
+		return new Response('Hello World!');
+	},
+
 	async tail(events: TraceItem[], env: Env, ctx: ExecutionContext) {
 		await env.TAIL_SAMPLE.put('trace', JSON.stringify(events));
 
