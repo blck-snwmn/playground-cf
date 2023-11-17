@@ -2,6 +2,7 @@ import { Ai } from "@cloudflare/ai";
 
 export interface Env {
 	TEXT_EMBEDDINGS: VectorizeIndex;
+	// biome-ignore lint/suspicious/noExplicitAny: no type
 	AI: any;
 }
 
@@ -17,7 +18,7 @@ export default {
 		ctx: ExecutionContext,
 	): Promise<Response> {
 		const ai = new Ai(env.AI);
-		let path = new URL(request.url).pathname;
+		const path = new URL(request.url).pathname;
 		if (path.startsWith("/favicon")) {
 			return new Response("", { status: 404 });
 		}
@@ -50,22 +51,22 @@ export default {
 				},
 			);
 
-			let vectors: VectorizeVector[] = [];
+			const vectors: VectorizeVector[] = [];
 			let id = 1;
-			modelResp.data.forEach((vector) => {
+			for (const vector of modelResp.data) {
 				vectors.push({
 					id: `${id}`,
 					values: vector,
 					metadata: { story: stories[id - 1] },
 				});
 				id++;
-			});
+			}
 
-			let inserted = await env.TEXT_EMBEDDINGS.upsert(vectors);
+			const inserted = await env.TEXT_EMBEDDINGS.upsert(vectors);
 			return Response.json(inserted);
 		}
 
-		let userQuery = "owners";
+		const userQuery = "owners";
 		const queryVector: EmbeddingResponse = await ai.run(
 			"@cf/baai/bge-base-en-v1.5",
 			{
