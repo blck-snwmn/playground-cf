@@ -26,7 +26,7 @@ export default {
 			if (url.length <= max) {
 				return url;
 			}
-			return url.slice(0, max) + "...";
+			return `${url.slice(0, max)}...`;
 		};
 
 		page.on("response", (resp) =>

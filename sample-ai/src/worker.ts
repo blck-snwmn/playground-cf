@@ -1,6 +1,7 @@
 import { Ai } from "@cloudflare/ai";
 
 export interface Env {
+	// biome-ignore lint/suspicious/noExplicitAny: no type
 	AI: any;
 }
 

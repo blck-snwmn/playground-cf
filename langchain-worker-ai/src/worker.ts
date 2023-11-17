@@ -13,6 +13,7 @@ import { CheerioWebBaseLoader } from "langchain/document_loaders/web/cheerio";
 
 export interface Env {
 	VECTORIZE_INDEX: VectorizeIndex;
+	// biome-ignore lint/suspicious/noExplicitAny: no type
 	AI: any;
 }
 
