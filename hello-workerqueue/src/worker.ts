@@ -14,7 +14,7 @@ export default {
 		env: Env,
 		ctx: ExecutionContext,
 	): Promise<Response> {
-		let message = {
+		const message = {
 			url: request.url,
 			method: request.method,
 			headers: Object.fromEntries(request.headers),

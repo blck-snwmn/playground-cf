@@ -8,7 +8,7 @@ export default {
 		env: Env,
 		ctx: ExecutionContext,
 	): Promise<Response> {
-		let path = new URL(request.url).pathname;
+		const path = new URL(request.url).pathname;
 		if (path.startsWith("/favicon")) {
 			return new Response("", { status: 404 });
 		}
@@ -42,7 +42,7 @@ export default {
 				},
 			];
 
-			let inserted = await env.VECTORIZE_INDEX.upsert(sampleVectors);
+			const inserted = await env.VECTORIZE_INDEX.upsert(sampleVectors);
 
 			return Response.json(inserted);
 		}
