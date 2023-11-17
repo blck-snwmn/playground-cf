@@ -21,6 +21,7 @@ export default {
 
 		try {
 			await env.SEB.send(message);
+			// biome-ignore lint/suspicious/noExplicitAny: no type
 		} catch (e: any) {
 			new Response(e.message);
 		}
