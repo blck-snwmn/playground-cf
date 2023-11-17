@@ -1,5 +1,5 @@
-import { EmailMessage } from "cloudflare:email";
 import { createMimeMessage } from "mimetext";
+import { EmailMessage } from "cloudflare:email";
 
 export interface Env {
 	SEB: SendEmail;

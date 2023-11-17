@@ -1,15 +1,15 @@
 // @ts-nocheck
 
 import type {
-	VectorizeIndex,
 	Fetcher,
 	Request,
+	VectorizeIndex,
 } from "@cloudflare/workers-types";
 
 import { Ai } from "@cloudflare/ai";
-import { CloudflareVectorizeStore } from "langchain/vectorstores/cloudflare_vectorize";
-import { CloudflareWorkersAIEmbeddings } from "langchain/embeddings/cloudflare_workersai";
 import { CheerioWebBaseLoader } from "langchain/document_loaders/web/cheerio";
+import { CloudflareWorkersAIEmbeddings } from "langchain/embeddings/cloudflare_workersai";
+import { CloudflareVectorizeStore } from "langchain/vectorstores/cloudflare_vectorize";
 
 export interface Env {
 	VECTORIZE_INDEX: VectorizeIndex;
@@ -57,7 +57,7 @@ export default {
 				},
 				{
 					role: "system",
-					content: "Supplementary information is below.\n" + pcs,
+					content: `Supplementary information is below.\n${pcs}`,
 				},
 				{ role: "user", content: query },
 			];

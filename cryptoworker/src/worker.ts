@@ -1,4 +1,5 @@
-export interface Env {}
+// biome-ignore lint/complexity/noBannedTypes: sample
+export type Env = {};
 
 export default {
 	async fetch(
