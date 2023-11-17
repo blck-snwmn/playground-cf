@@ -8,7 +8,11 @@ export interface Env {
 }
 
 export default {
-	async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
+	async fetch(
+		request: Request,
+		env: Env,
+		ctx: ExecutionContext,
+	): Promise<Response> {
 		const db = new Kysely<DB>({
 			dialect: new D1Dialect({ database: env.DB }),
 		});
@@ -17,11 +21,16 @@ export default {
 			return Response.json(posts);
 		}
 		if (request.method === "POST") {
-			await db.insertInto("Post").values([{
-				id: "1", // default value is not working because uuid() is not working in sqlite.
-				title: "Hello, world!",
-				body: "This is my first post!",
-			}]).execute();
+			await db
+				.insertInto("Post")
+				.values([
+					{
+						id: "1", // default value is not working because uuid() is not working in sqlite.
+						title: "Hello, world!",
+						body: "This is my first post!",
+					},
+				])
+				.execute();
 			return new Response("OK");
 		}
 		return new Response("Method not allowed", { status: 405 });

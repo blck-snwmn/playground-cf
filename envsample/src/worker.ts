@@ -4,9 +4,13 @@ export interface Env {
 }
 
 export default {
-	async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
-		console.info('MY_VARIABLE', env.MY_VARIABLE);
-		console.info('SHARED_VARIABLE', env.SHARED_VARIABLE);
-		return new Response('Hello World!');
+	async fetch(
+		request: Request,
+		env: Env,
+		ctx: ExecutionContext,
+	): Promise<Response> {
+		console.info("MY_VARIABLE", env.MY_VARIABLE);
+		console.info("SHARED_VARIABLE", env.SHARED_VARIABLE);
+		return new Response("Hello World!");
 	},
 };

@@ -1,15 +1,14 @@
-
 export interface Env {
-	app: Fetcher
+	app: Fetcher;
 }
 
 export default {
 	async fetch(
 		request: Request,
 		env: Env,
-		ctx: ExecutionContext
+		ctx: ExecutionContext,
 	): Promise<Response> {
-		console.log("gateway")
+		console.log("gateway");
 		return env.app.fetch(request.clone());
 	},
 };

@@ -7,16 +7,19 @@ import { RetrievalQAChain } from "langchain/chains";
 export default {
 	async fetch(request, env, ctx) {
 		const loader = new CheerioWebBaseLoader(
-			"https://en.wikipedia.org/wiki/QUIC"
+			"https://en.wikipedia.org/wiki/QUIC",
 		);
 		const docs = await loader.loadAndSplit();
-		const store = await MemoryVectorStore.fromDocuments(docs, new OpenAIEmbeddings({ openAIApiKey: env.OPENAI_API_KEY }));
+		const store = await MemoryVectorStore.fromDocuments(
+			docs,
+			new OpenAIEmbeddings({ openAIApiKey: env.OPENAI_API_KEY }),
+		);
 
 		const model = new OpenAI({ openAIApiKey: env.OPENAI_API_KEY });
 		const chain = RetrievalQAChain.fromLLM(model, store.asRetriever());
 
 		const { searchParams } = new URL(request.url);
-		const question = searchParams.get('question') ?? "Who developed the QUIC?";
+		const question = searchParams.get("question") ?? "Who developed the QUIC?";
 
 		try {
 			const res = await chain.call({

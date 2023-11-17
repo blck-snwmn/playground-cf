@@ -6,7 +6,7 @@ import type {
 	Request,
 } from "@cloudflare/workers-types";
 
-import { Ai } from '@cloudflare/ai'
+import { Ai } from "@cloudflare/ai";
 import { CloudflareVectorizeStore } from "langchain/vectorstores/cloudflare_vectorize";
 import { CloudflareWorkersAIEmbeddings } from "langchain/embeddings/cloudflare_workersai";
 import { CheerioWebBaseLoader } from "langchain/document_loaders/web/cheerio";
@@ -22,7 +22,7 @@ export default {
 		const { pathname } = url;
 		if (pathname.startsWith("/favicon")) {
 			// 404 for favicon
-			return new Response('', { status: 404 });
+			return new Response("", { status: 404 });
 		}
 
 		const embeddings = new CloudflareWorkersAIEmbeddings({
@@ -36,23 +36,33 @@ export default {
 		if (pathname === "/search") {
 			const ai = new Ai(env.AI);
 
-			const query = url.searchParams.get("q") ?? "Tell me about encryption in QUIC"
+			const query =
+				url.searchParams.get("q") ?? "Tell me about encryption in QUIC";
 			const results = await store.similaritySearch(query, 5);
 
-			const pcs = results.map((result) => result.pageContent.replace("\n", "")).join("\n");
+			const pcs = results
+				.map((result) => result.pageContent.replace("\n", ""))
+				.join("\n");
 			console.log("results:", pcs);
 
 			const messages = [
 				{
-					role: 'system', content: `
+					role: "system",
+					content: `
 					You are the expert. Answer the user's question.
 					Supplementary information is provided separately from the user's question.
 					Use it if necessary.
-				` },
-				{ role: 'system', content: "Supplementary information is below.\n" + pcs },
-				{ role: 'user', content: query },
+				`,
+				},
+				{
+					role: "system",
+					content: "Supplementary information is below.\n" + pcs,
+				},
+				{ role: "user", content: query },
 			];
-			const response = await ai.run('@cf/meta/llama-2-7b-chat-int8', { messages });
+			const response = await ai.run("@cf/meta/llama-2-7b-chat-int8", {
+				messages,
+			});
 			return Response.json(response);
 		}
 
@@ -78,7 +88,7 @@ export default {
 				// remove metadata because metadata type is mismatched
 				doc.metadata = null;
 				return doc;
-			})
+			});
 			console.log("Loaded documents:", docs.length);
 			const ids = await store.addDocuments(nd);
 			return Response.json({ success: true });

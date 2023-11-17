@@ -1,13 +1,12 @@
-export interface Env {
-}
+export interface Env {}
 
 export default {
 	async fetch(
 		request: Request,
 		env: Env,
-		ctx: ExecutionContext
+		ctx: ExecutionContext,
 	): Promise<Response> {
-		console.log("app")
+		console.log("app");
 		return new Response("Hello Services!");
 	},
 };
