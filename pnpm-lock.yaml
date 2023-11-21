@@ -18,11 +18,11 @@ importers:
         specifier: ^4.20231025.0
         version: 4.20231025.0
       typescript:
-        specifier: ^5.2.2
-        version: 5.2.2
+        specifier: ^5.3.2
+        version: 5.3.2
       wrangler:
-        specifier: ^3.15.0
-        version: 3.15.0
+        specifier: ^3.16.0
+        version: 3.16.0
 
   cfworkerservices/app:
     devDependencies:
@@ -30,11 +30,11 @@ importers:
         specifier: ^4.20231025.0
         version: 4.20231025.0
       typescript:
-        specifier: ^5.2.2
-        version: 5.2.2
+        specifier: ^5.3.2
+        version: 5.3.2
       wrangler:
-        specifier: 3.15.0
-        version: 3.15.0
+        specifier: 3.16.0
+        version: 3.16.0
 
   cfworkerservices/gateway:
     devDependencies:
@@ -42,11 +42,11 @@ importers:
         specifier: ^4.20231025.0
         version: 4.20231025.0
       typescript:
-        specifier: ^5.2.2
-        version: 5.2.2
+        specifier: ^5.3.2
+        version: 5.3.2
       wrangler:
-        specifier: 3.15.0
-        version: 3.15.0
+        specifier: 3.16.0
+        version: 3.16.0
 
   cryptoworker:
     devDependencies:
@@ -54,11 +54,11 @@ importers:
         specifier: ^4.20230419.0
         version: 4.20231025.0
       typescript:
-        specifier: ^5.0.4
-        version: 5.2.2
+        specifier: ^5.3.2
+        version: 5.3.2
       wrangler:
-        specifier: ^3.0.0
-        version: 3.15.0
+        specifier: ^3.16.0
+        version: 3.16.0
 
   d1-kysely:
     devDependencies:
@@ -72,17 +72,17 @@ importers:
         specifier: ^0.3.0
         version: 0.3.0(kysely@0.26.3)
       prisma:
-        specifier: ^5.5.2
-        version: 5.5.2
+        specifier: ^5.6.0
+        version: 5.6.0
       prisma-kysely:
         specifier: ^1.7.1
         version: 1.7.1
       typescript:
-        specifier: ^5.2.2
-        version: 5.2.2
+        specifier: ^5.3.2
+        version: 5.3.2
       wrangler:
-        specifier: ^3.15.0
-        version: 3.15.0
+        specifier: ^3.16.0
+        version: 3.16.0
 
   envsample:
     devDependencies:
@@ -90,27 +90,27 @@ importers:
         specifier: ^4.20231025.0
         version: 4.20231025.0
       typescript:
-        specifier: ^5.0.4
-        version: 5.2.2
+        specifier: ^5.3.2
+        version: 5.3.2
       wrangler:
-        specifier: ^3.15.0
-        version: 3.15.0
+        specifier: ^3.16.0
+        version: 3.16.0
 
   hello-ai-worker:
     dependencies:
       '@cloudflare/ai':
-        specifier: ^1.0.23
-        version: 1.0.23
+        specifier: ^1.0.30
+        version: 1.0.30
     devDependencies:
       '@cloudflare/workers-types':
         specifier: ^4.20231025.0
         version: 4.20231025.0
       typescript:
-        specifier: ^5.2.2
-        version: 5.2.2
+        specifier: ^5.3.2
+        version: 5.3.2
       wrangler:
-        specifier: ^3.15.0
-        version: 3.15.0
+        specifier: ^3.16.0
+        version: 3.16.0
 
   hello-browser-worker:
     devDependencies:
@@ -121,14 +121,14 @@ importers:
         specifier: ^4.20231025.0
         version: 4.20231025.0
       '@types/node':
-        specifier: ^20.9.0
-        version: 20.9.0
+        specifier: ^20.9.3
+        version: 20.9.3
       typescript:
-        specifier: ^5.2.2
-        version: 5.2.2
+        specifier: ^5.3.2
+        version: 5.3.2
       wrangler:
-        specifier: ^3.15.0
-        version: 3.15.0
+        specifier: ^3.16.0
+        version: 3.16.0
 
   hello-vectorize:
     devDependencies:
@@ -136,11 +136,11 @@ importers:
         specifier: ^4.20231025.0
         version: 4.20231025.0
       typescript:
-        specifier: ^5.2.2
-        version: 5.2.2
+        specifier: ^5.3.2
+        version: 5.3.2
       wrangler:
-        specifier: ^3.15.0
-        version: 3.15.0
+        specifier: ^3.16.0
+        version: 3.16.0
 
   hello-workerqueue:
     devDependencies:
@@ -148,11 +148,11 @@ importers:
         specifier: ^4.20231025.0
         version: 4.20231025.0
       typescript:
-        specifier: ^5.2.2
-        version: 5.2.2
+        specifier: ^5.3.2
+        version: 5.3.2
       wrangler:
-        specifier: ^3.15.0
-        version: 3.15.0
+        specifier: ^3.16.0
+        version: 3.16.0
 
   langchain-worker:
     dependencies:
@@ -160,55 +160,55 @@ importers:
         specifier: 1.0.0-rc.12
         version: 1.0.0-rc.12
       langchain:
-        specifier: ^0.0.183
-        version: 0.0.183(@cloudflare/ai@1.0.23)(cheerio@1.0.0-rc.12)
+        specifier: ^0.0.195
+        version: 0.0.195(@cloudflare/ai@1.0.30)(cheerio@1.0.0-rc.12)
     devDependencies:
       '@cloudflare/workers-types':
         specifier: ^4.20231025.0
         version: 4.20231025.0
       typescript:
-        specifier: ^5.2.2
-        version: 5.2.2
+        specifier: ^5.3.2
+        version: 5.3.2
       wrangler:
-        specifier: ^3.15.0
-        version: 3.15.0
+        specifier: ^3.16.0
+        version: 3.16.0
 
   langchain-worker-ai:
     dependencies:
       '@cloudflare/ai':
-        specifier: ^1.0.23
-        version: 1.0.23
+        specifier: ^1.0.30
+        version: 1.0.30
       cheerio:
         specifier: 1.0.0-rc.12
         version: 1.0.0-rc.12
       langchain:
-        specifier: ^0.0.183
-        version: 0.0.183(@cloudflare/ai@1.0.23)(cheerio@1.0.0-rc.12)
+        specifier: ^0.0.195
+        version: 0.0.195(@cloudflare/ai@1.0.30)(cheerio@1.0.0-rc.12)
     devDependencies:
       '@cloudflare/workers-types':
         specifier: ^4.20231025.0
         version: 4.20231025.0
       typescript:
-        specifier: ^5.2.2
-        version: 5.2.2
+        specifier: ^5.3.2
+        version: 5.3.2
       wrangler:
-        specifier: ^3.15.0
-        version: 3.15.0
+        specifier: ^3.16.0
+        version: 3.16.0
 
   sample-ai:
     devDependencies:
       '@cloudflare/ai':
-        specifier: ^1.0.23
-        version: 1.0.23
+        specifier: ^1.0.30
+        version: 1.0.30
       '@cloudflare/workers-types':
         specifier: ^4.20231025.0
         version: 4.20231025.0
       typescript:
-        specifier: ^5.2.2
-        version: 5.2.2
+        specifier: ^5.3.2
+        version: 5.3.2
       wrangler:
-        specifier: ^3.15.0
-        version: 3.15.0
+        specifier: ^3.16.0
+        version: 3.16.0
 
   send-email-worker:
     dependencies:
@@ -220,27 +220,27 @@ importers:
         specifier: ^4.20231025.0
         version: 4.20231025.0
       typescript:
-        specifier: ^5.2.2
-        version: 5.2.2
+        specifier: ^5.3.2
+        version: 5.3.2
       wrangler:
-        specifier: ^3.15.0
-        version: 3.15.0
+        specifier: ^3.16.0
+        version: 3.16.0
 
   stream-manager:
     dependencies:
       hono:
-        specifier: ^3.9.2
-        version: 3.9.2
+        specifier: ^3.10.2
+        version: 3.10.2
     devDependencies:
       '@cloudflare/workers-types':
         specifier: ^4.20231025.0
         version: 4.20231025.0
       typescript:
-        specifier: ^5.0.4
-        version: 5.2.2
+        specifier: ^5.3.2
+        version: 5.3.2
       wrangler:
-        specifier: ^3.15.0
-        version: 3.15.0
+        specifier: ^3.16.0
+        version: 3.16.0
 
   tailworker:
     devDependencies:
@@ -248,11 +248,11 @@ importers:
         specifier: ^4.20230419.0
         version: 4.20231025.0
       typescript:
-        specifier: ^5.0.4
-        version: 5.2.2
+        specifier: ^5.3.2
+        version: 5.3.2
       wrangler:
-        specifier: ^3.0.0
-        version: 3.15.0
+        specifier: ^3.16.0
+        version: 3.16.0
 
 packages:
 
@@ -261,8 +261,8 @@ packages:
     hasBin: true
     dev: true
 
-  /@anthropic-ai/sdk@0.6.2:
-    resolution: {integrity: sha512-fB9PUj9RFT+XjkL+E9Ol864ZIJi+1P8WnbHspN3N3/GK2uSzjd0cbVIKTGgf4v3N8MwaQu+UWnU7C4BG/fap/g==}
+  /@anthropic-ai/sdk@0.9.1:
+    resolution: {integrity: sha512-wa1meQ2WSfoY8Uor3EdrJq0jTiZJoKoSii2ZVWRY1oN4Tlr5s59pADg9T79FTbPe1/se5c3pBeZgJL63wmuoBA==}
     dependencies:
       '@types/node': 18.18.3
       '@types/node-fetch': 2.6.6
@@ -272,6 +272,7 @@ packages:
       form-data-encoder: 1.7.2
       formdata-node: 4.4.1
       node-fetch: 2.7.0
+      web-streams-polyfill: 3.2.1
     transitivePeerDependencies:
       - encoding
     dev: false
@@ -404,8 +405,8 @@ packages:
     resolution: {integrity: sha512-hBzuU5+JjB2cqNZyszkDHZgOSrUUT8V3dhgRl8Q9Gp6dAj/H5+KILGjbhDpc3Iy9qmqlm/akuOI2ut9VUtzJxQ==}
     dev: true
 
-  /@cloudflare/ai@1.0.23:
-    resolution: {integrity: sha512-H616o6h/pnFivwAQS2Kw3TAR4ijDDGiRrZbngrPQRu5tHGS3hIJiNPYU7habUEnnZCnxTbjY3bjer35axED6Aw==}
+  /@cloudflare/ai@1.0.30:
+    resolution: {integrity: sha512-lGWcJWkguGCjfCMrLgBC81TogIyCfXX76CRgw/LS0BQEFu6FV0cqxxrzmq/X++PlWWUJfzxzUOhsdMLBA2pfAw==}
 
   /@cloudflare/kv-asset-handler@0.2.0:
     resolution: {integrity: sha512-MVbXLbTcAotOPUj0pAMhVtJ+3/kFkwJqc5qNOleOZTv6QkZZABDMS21dSrSlVswEHwrpWC03e4fWytjqKvuE2A==}
@@ -427,8 +428,8 @@ packages:
       - supports-color
     dev: true
 
-  /@cloudflare/workerd-darwin-64@1.20231025.0:
-    resolution: {integrity: sha512-MYRYTbSl+tjGg6su7savlLIb8cOcKJfdGpA+WdtgqT2OF7O+89Lag0l1SA/iyVlUkT31Jc6OLHqvzsXgmg+niQ==}
+  /@cloudflare/workerd-darwin-64@1.20231030.0:
+    resolution: {integrity: sha512-J4PQ9utPxLya9yHdMMx3AZeC5M/6FxcoYw6jo9jbDDFTy+a4Gslqf4Im9We3aeOEdPXa3tgQHVQOSelJSZLhIw==}
     engines: {node: '>=16'}
     cpu: [x64]
     os: [darwin]
@@ -436,8 +437,8 @@ packages:
     dev: true
     optional: true
 
-  /@cloudflare/workerd-darwin-arm64@1.20231025.0:
-    resolution: {integrity: sha512-BszjtBDR84TVa6oWe74dePJSAukWlTmLw9zR4KeWuwZLJGV7RMm6AmwGStetjnwZrecZaaOFELfBCAHtsebV0Q==}
+  /@cloudflare/workerd-darwin-arm64@1.20231030.0:
+    resolution: {integrity: sha512-WSJJjm11Del4hSneiNB7wTXGtBXI4QMCH9l5qf4iT5PAW8cESGcCmdHtWDWDtGAAGcvmLT04KNvmum92vRKKQQ==}
     engines: {node: '>=16'}
     cpu: [arm64]
     os: [darwin]
@@ -445,8 +446,8 @@ packages:
     dev: true
     optional: true
 
-  /@cloudflare/workerd-linux-64@1.20231025.0:
-    resolution: {integrity: sha512-AT9dxgKXOa9xZxZ3k2a432axPJJ58KpoNWnPiPYGpuAuLoWnfcYwwh6mr9sZVcTdAdTAK9Xu9c81tp0YABanUw==}
+  /@cloudflare/workerd-linux-64@1.20231030.0:
+    resolution: {integrity: sha512-2HUeRTvoCC17fxE0qdBeR7J9dO8j4A8ZbdcvY8pZxdk+zERU6+N03RTbk/dQMU488PwiDvcC3zZqS4gwLfVT8g==}
     engines: {node: '>=16'}
     cpu: [x64]
     os: [linux]
@@ -454,8 +455,8 @@ packages:
     dev: true
     optional: true
 
-  /@cloudflare/workerd-linux-arm64@1.20231025.0:
-    resolution: {integrity: sha512-EIjex5o2k80YZWPix1btGybL/vNZ3o6vqKX9ptS0JcFkHV5aFX5/kcMwSBRjiIC+w04zVjmGQx3N1Vh3njuncg==}
+  /@cloudflare/workerd-linux-arm64@1.20231030.0:
+    resolution: {integrity: sha512-4/GK5zHh+9JbUI6Z5xTCM0ZmpKKHk7vu9thmHjUxtz+o8Ne9DoD7DlDvXQWgMF6XGaTubDWyp3ttn+Qv8jDFuQ==}
     engines: {node: '>=16'}
     cpu: [arm64]
     os: [linux]
@@ -463,8 +464,8 @@ packages:
     dev: true
     optional: true
 
-  /@cloudflare/workerd-windows-64@1.20231025.0:
-    resolution: {integrity: sha512-7vtq0mO22A2v0OOsKXa760r9a84Gg8CK0gDu5uNWlj6hojmt011iz7jJt76I7oo/XrVwVlVfu69GnA3ljx6U8w==}
+  /@cloudflare/workerd-windows-64@1.20231030.0:
+    resolution: {integrity: sha512-fb/Jgj8Yqy3PO1jLhk7mTrHMkR8jklpbQFud6rL/aMAn5d6MQbaSrYOCjzkKGp0Zng8D2LIzSl+Fc0C9Sggxjg==}
     engines: {node: '>=16'}
     cpu: [x64]
     os: [win32]
@@ -746,8 +747,8 @@ packages:
     requiresBuild: true
     dev: true
 
-  /@prisma/engines@5.5.2:
-    resolution: {integrity: sha512-Be5hoNF8k+lkB3uEMiCHbhbfF6aj1GnrTBnn5iYFT7GEr3TsOEp1soviEcBR0tYCgHbxjcIxJMhdbvxALJhAqg==}
+  /@prisma/engines@5.6.0:
+    resolution: {integrity: sha512-Mt2q+GNJpU2vFn6kif24oRSBQv1KOkYaterQsi0k2/lA+dLvhRX6Lm26gon6PYHwUM8/h8KRgXIUMU0PCLB6bw==}
     requiresBuild: true
     dev: true
 
@@ -874,7 +875,7 @@ packages:
   /@types/cross-spawn@6.0.2:
     resolution: {integrity: sha512-KuwNhp3eza+Rhu8IFI5HUXRP0LIhqH5cAjubUvGXXthh4YYBuP2ntwEX+Cz8GJoZUHlKo247wPWOfA9LYEq4cw==}
     dependencies:
-      '@types/node': 20.9.0
+      '@types/node': 20.9.3
     dev: true
 
   /@types/debug@4.1.8:
@@ -890,7 +891,7 @@ packages:
   /@types/node-fetch@2.6.6:
     resolution: {integrity: sha512-95X8guJYhfqiuVVhRFxVQcf4hW/2bCuoPwDasMf/531STFoNoWTT7YDnWdXHEZKqAGUigmpG31r2FE70LwnzJw==}
     dependencies:
-      '@types/node': 20.9.0
+      '@types/node': 20.9.3
       form-data: 4.0.0
     dev: false
 
@@ -898,8 +899,8 @@ packages:
     resolution: {integrity: sha512-0OVfGupTl3NBFr8+iXpfZ8NR7jfFO+P1Q+IO/q0wbo02wYkP5gy36phojeYWpLQ6WAMjl+VfmqUk2YbUfp0irA==}
     dev: false
 
-  /@types/node@20.9.0:
-    resolution: {integrity: sha512-nekiGu2NDb1BcVofVcEKMIwzlx4NjHlcjhoxxKBNLtz15Y1z7MYf549DFvkHSId02Ax6kGwWntIBPC3l/JZcmw==}
+  /@types/node@20.9.3:
+    resolution: {integrity: sha512-nk5wXLAXGBKfrhLB0cyHGbSqopS+nz0BUgZkUQqSHSSgdee0kssp1IAqlQOu333bW+gMNs2QREx7iynm19Abxw==}
     dependencies:
       undici-types: 5.26.5
 
@@ -1819,8 +1820,8 @@ packages:
       type-fest: 0.8.1
     dev: true
 
-  /hono@3.9.2:
-    resolution: {integrity: sha512-180NOiMadqU3lGmN6ajPDZvZPWus3a9mtVaAUR9uG0SImngBwRLA8vbnV0oUfUAgFT4nX55sGV9dVA06OuikHA==}
+  /hono@3.10.2:
+    resolution: {integrity: sha512-QwJLjWs3e+nZ3b5nQrrdJpYCJqiTK744jeYhX7yhZdxwcQ3KIohBfzI2dA8gSF6HEZkmFUdiKL1BelJ8utIm4w==}
     engines: {node: '>=16.0.0'}
     dev: false
 
@@ -2081,8 +2082,8 @@ packages:
     engines: {node: '>=14.0.0'}
     dev: true
 
-  /langchain@0.0.183(@cloudflare/ai@1.0.23)(cheerio@1.0.0-rc.12):
-    resolution: {integrity: sha512-Atyd2CWMycTfLiw6ZO9+FzESkW989PFUipQ53Jp0fffDYZWODB2AbjSI1a0pjFj2JTB06RMXt8hqk+vkT5G2Mw==}
+  /langchain@0.0.195(@cloudflare/ai@1.0.30)(cheerio@1.0.0-rc.12):
+    resolution: {integrity: sha512-b3TOfhSUwxe2ZCr4yYlR5dciyy0qyqrDeqAfVFJKM0H7/ueFHFllr4uJydsbzC5+ahlqDFRbzUEK005sbHgdSQ==}
     engines: {node: '>=18'}
     peerDependencies:
       '@aws-crypto/sha256-js': ^5.0.0
@@ -2100,9 +2101,9 @@ packages:
       '@elastic/elasticsearch': ^8.4.0
       '@getmetal/metal-sdk': '*'
       '@getzep/zep-js': ^0.9.0
-      '@gomomento/sdk': ^1.44.1
-      '@gomomento/sdk-core': ^1.44.1
-      '@gomomento/sdk-web': ^1.44.1
+      '@gomomento/sdk': ^1.47.1
+      '@gomomento/sdk-core': ^1.47.1
+      '@gomomento/sdk-web': ^1.47.1
       '@google-ai/generativelanguage': ^0.2.1
       '@google-cloud/storage': ^6.10.1
       '@huggingface/inference': ^2.6.4
@@ -2113,6 +2114,7 @@ packages:
       '@planetscale/database': ^1.8.0
       '@qdrant/js-client-rest': ^1.2.0
       '@raycast/api': ^1.55.2
+      '@rockset/client': ^0.9.1
       '@smithy/eventstream-codec': ^2.0.5
       '@smithy/protocol-http': ^3.0.6
       '@smithy/signature-v4': ^2.0.10
@@ -2152,7 +2154,7 @@ packages:
       ignore: ^5.2.0
       ioredis: ^5.3.2
       jsdom: '*'
-      llmonitor: ^0.5.8
+      llmonitor: ^0.5.9
       lodash: ^4.17.21
       mammoth: '*'
       mongodb: ^5.2.0
@@ -2238,6 +2240,8 @@ packages:
       '@qdrant/js-client-rest':
         optional: true
       '@raycast/api':
+        optional: true
+      '@rockset/client':
         optional: true
       '@smithy/eventstream-codec':
         optional: true
@@ -2378,8 +2382,8 @@ packages:
       youtubei.js:
         optional: true
     dependencies:
-      '@anthropic-ai/sdk': 0.6.2
-      '@cloudflare/ai': 1.0.23
+      '@anthropic-ai/sdk': 0.9.1
+      '@cloudflare/ai': 1.0.30
       ansi-styles: 5.2.0
       binary-extensions: 2.2.0
       camelcase: 6.3.0
@@ -2393,14 +2397,14 @@ packages:
       langchainhub: 0.0.6
       langsmith: 0.0.48
       ml-distance: 4.0.1
-      openai: 4.16.1
+      openai: 4.19.1
       openapi-types: 12.1.3
       p-queue: 6.6.2
       p-retry: 4.6.2
       uuid: 9.0.1
       yaml: 2.3.2
       zod: 3.22.4
-      zod-to-json-schema: 3.21.4(zod@3.22.4)
+      zod-to-json-schema: 3.20.3(zod@3.22.4)
     transitivePeerDependencies:
       - encoding
     dev: false
@@ -2552,7 +2556,7 @@ packages:
       '@tsconfig/esm': 1.0.4
       '@tsconfig/node18': 2.0.1
       '@tsconfig/strictest': 2.0.2
-      '@types/node': 20.9.0
+      '@types/node': 20.9.3
       js-base64: 3.7.5
       mime-types: 2.1.35
     dev: false
@@ -2567,9 +2571,10 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /miniflare@3.20231025.0:
-    resolution: {integrity: sha512-pFcr2BRaGIQ26UfdDo8BMJ6kkd/Jo/FkQ/4K7UG/eORlDepsLrR/sTJddcSSIGl07MA+MGjhzopFTPpFskkS+g==}
+  /miniflare@3.20231030.0:
+    resolution: {integrity: sha512-iCg1dNauUG+kNp7jizcNmV/1XFItuTDvD/6xIC34PrszgKxYCbBO2R72y5NEDJTwaqr5ohQI/320wuJ8GEe7nQ==}
     engines: {node: '>=16.13'}
+    hasBin: true
     dependencies:
       acorn: 8.10.0
       acorn-walk: 8.2.0
@@ -2579,7 +2584,7 @@ packages:
       source-map-support: 0.5.21
       stoppable: 1.1.0
       undici: 5.25.4
-      workerd: 1.20231025.0
+      workerd: 1.20231030.0
       ws: 8.14.2
       youch: 3.3.2
       zod: 3.22.4
@@ -2765,8 +2770,8 @@ packages:
       is-wsl: 2.2.0
     dev: true
 
-  /openai@4.16.1:
-    resolution: {integrity: sha512-Gr+uqUN1ICSk6VhrX64E+zL7skjI1TgPr/XUN+ZQuNLLOvx15+XZulx/lSW4wFEAQzgjBDlMBbBeikguGIjiMg==}
+  /openai@4.19.1:
+    resolution: {integrity: sha512-9TddzuZBn2xxhghGGTHLZ4EeNBGTLs3xVzh266NiSJvtUsCsZQ5yVV6H5NhnhyAkKK8uUiZOUUlUAk3HdV+4xg==}
     hasBin: true
     dependencies:
       '@types/node': 18.18.3
@@ -2939,20 +2944,20 @@ packages:
       '@mrleebo/prisma-ast': 0.7.0
       '@prisma/generator-helper': 5.3.1
       '@prisma/internals': 5.3.1
-      typescript: 5.2.2
+      typescript: 5.3.2
       zod: 3.22.4
     transitivePeerDependencies:
       - encoding
       - supports-color
     dev: true
 
-  /prisma@5.5.2:
-    resolution: {integrity: sha512-WQtG6fevOL053yoPl6dbHV+IWgKo25IRN4/pwAGqcWmg7CrtoCzvbDbN9fXUc7QS2KK0LimHIqLsaCOX/vHl8w==}
+  /prisma@5.6.0:
+    resolution: {integrity: sha512-EEaccku4ZGshdr2cthYHhf7iyvCcXqwJDvnoQRAJg5ge2Tzpv0e2BaMCp+CbbDUwoVTzwgOap9Zp+d4jFa2O9A==}
     engines: {node: '>=16.13'}
     hasBin: true
     requiresBuild: true
     dependencies:
-      '@prisma/engines': 5.5.2
+      '@prisma/engines': 5.6.0
     dev: true
 
   /process-nextick-args@2.0.1:
@@ -3380,8 +3385,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /typescript@5.2.2:
-    resolution: {integrity: sha512-mI4WrpHsbCIcwT9cF4FZvr80QUeKvsUsUvKDoR+X/7XHQH98xYD8YHZg7ANtz2GtZt/CBq2QJ0thkGJMHfqc1w==}
+  /typescript@5.3.2:
+    resolution: {integrity: sha512-6l+RyNy7oAHDfxC4FzSJcz9vnjTKxrLpDG5M2Vu4SHRVNg6xzqZp6LYSR9zjqQTu8DU/f5xwxUdADOkbrIX2gQ==}
     engines: {node: '>=14.17'}
     hasBin: true
     dev: true
@@ -3484,21 +3489,21 @@ packages:
       isexe: 2.0.0
     dev: true
 
-  /workerd@1.20231025.0:
-    resolution: {integrity: sha512-W1PFtpMFfvmm+ozBf+u70TE3Pviv7WA4qzDeejHDC4z+PFDq4+3KJCkgffaGBO86h+akWO0hSsc0uXL2zAqofQ==}
+  /workerd@1.20231030.0:
+    resolution: {integrity: sha512-+FSW+d31f8RrjHanFf/R9A+Z0csf3OtsvzdPmAKuwuZm/5HrBv83cvG9fFeTxl7/nI6irUUXIRF9xcj/NomQzQ==}
     engines: {node: '>=16'}
     hasBin: true
     requiresBuild: true
     optionalDependencies:
-      '@cloudflare/workerd-darwin-64': 1.20231025.0
-      '@cloudflare/workerd-darwin-arm64': 1.20231025.0
-      '@cloudflare/workerd-linux-64': 1.20231025.0
-      '@cloudflare/workerd-linux-arm64': 1.20231025.0
-      '@cloudflare/workerd-windows-64': 1.20231025.0
+      '@cloudflare/workerd-darwin-64': 1.20231030.0
+      '@cloudflare/workerd-darwin-arm64': 1.20231030.0
+      '@cloudflare/workerd-linux-64': 1.20231030.0
+      '@cloudflare/workerd-linux-arm64': 1.20231030.0
+      '@cloudflare/workerd-windows-64': 1.20231030.0
     dev: true
 
-  /wrangler@3.15.0:
-    resolution: {integrity: sha512-kxzK62rD+LRrDeZZzw8cP6FBub71vJCbfAAb594XobXajgXYh3pFjv18Vm8YLxHzoGMhmAOJPA5b4DHq4HEUCw==}
+  /wrangler@3.16.0:
+    resolution: {integrity: sha512-MIx35sSdFKE3hnfWB6xWUnrt3OiyKK+PQnc9kFLjksLESX0tLmEk1gdvThYHliY90kkelS+nbH48SUGTFAI5BA==}
     engines: {node: '>=16.17.0'}
     hasBin: true
     dependencies:
@@ -3508,7 +3513,7 @@ packages:
       blake3-wasm: 2.1.5
       chokidar: 3.5.3
       esbuild: 0.17.19
-      miniflare: 3.20231025.0
+      miniflare: 3.20231030.0
       nanoid: 3.3.6
       path-to-regexp: 6.2.1
       resolve.exports: 2.0.2
@@ -3576,10 +3581,10 @@ packages:
       readable-stream: 3.6.2
     dev: true
 
-  /zod-to-json-schema@3.21.4(zod@3.22.4):
-    resolution: {integrity: sha512-fjUZh4nQ1s6HMccgIeE0VP4QG/YRGPmyjO9sAh890aQKPEk3nqbfUXhMFaC+Dr5KvYBm8BCyvfpZf2jY9aGSsw==}
+  /zod-to-json-schema@3.20.3(zod@3.22.4):
+    resolution: {integrity: sha512-/Q3wnyxAfCt94ZcrGiXXoiAfRqasxl9CX64LZ9fj+4dKH68zulUtU0uk1WMxQPfAxQ0ZI70dKzcoW7hHj+DwSQ==}
     peerDependencies:
-      zod: ^3.21.4
+      zod: ^3.20.0
     dependencies:
       zod: 3.22.4
     dev: false
