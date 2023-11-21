@@ -10,6 +10,13 @@ describe("Wrangler", () => {
 			vars: {
 				NAME: "Cloudflare",
 			},
+			r2: [
+				{
+					binding: "MY_BUCKET",
+					bucket_name: "my-bucket",
+					preview_bucket_name: "my-bucket-preview",
+				},
+			],
 			experimental: { disableExperimentalWarning: true },
 		});
 	});
@@ -28,5 +35,21 @@ describe("Wrangler", () => {
 		const res = await worker.fetch("/env");
 		expect(res.status).toBe(200);
 		expect(await res.text()).toBe("Cloudflare");
+	});
+
+	// it("Should return 404", async () => {
+	// 	const res = await worker.fetch("/buket");
+	// 	expect(res.status).toBe(404);
+	// 	expect(await res.text()).toBe("Not found");
+	// });
+
+	it("Should return 200 before put", async () => {
+		const res = await worker.fetch("/buket", { method: "PUT" });
+		expect(res.status).toBe(200);
+		expect(await res.text()).toBe("OK");
+
+		const res2 = await worker.fetch("/buket");
+		expect(res2.status).toBe(200);
+		expect(await res2.text()).toBe("value");
 	});
 });
