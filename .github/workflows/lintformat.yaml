@@ -1,0 +1,30 @@
+name: Lint & Format
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+          run_install: true
+      - name: lint
+        run: |
+          pnpm biome lint .
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+          run_install: true
+      - name: lint
+        run: |
+          pnpm biome format .
