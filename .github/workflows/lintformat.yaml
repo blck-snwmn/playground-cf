@@ -2,8 +2,6 @@ name: Lint & Format
 
 on:
   push:
-    branches:
-      - main
 
 jobs:
   lint:
