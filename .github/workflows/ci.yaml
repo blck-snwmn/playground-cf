@@ -1,4 +1,4 @@
-name: Lint & Format
+name: Lint & Format & Test
 
 on:
   push:
@@ -14,7 +14,8 @@ jobs:
           run_install: true
       - name: lint
         run: |
-          pnpm biome lint .
+          pnpm run lint
+
   format:
     runs-on: ubuntu-latest
     steps:
@@ -25,4 +26,4 @@ jobs:
           run_install: true
       - name: lint
         run: |
-          pnpm biome format .
+          pnpm run format
