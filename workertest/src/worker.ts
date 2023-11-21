@@ -1,5 +1,6 @@
-// biome-ignore lint/complexity/noBannedTypes: sample
-export type Env = {};
+export type Env = {
+	NAME: string;
+};
 
 export default {
 	async fetch(
@@ -7,6 +8,9 @@ export default {
 		env: Env,
 		ctx: ExecutionContext,
 	): Promise<Response> {
+		if (request.url.endsWith("/env")) {
+			return new Response(env.NAME);
+		}
 		return new Response("Hello World!");
 	},
 };
