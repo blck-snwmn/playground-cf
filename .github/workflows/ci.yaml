@@ -27,3 +27,15 @@ jobs:
       - name: lint
         run: |
           pnpm run format
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+          run_install: true
+      - name: test
+        run: |
+          pnpm run --filter workertest test
