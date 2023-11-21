@@ -1,0 +1,3 @@
+name = "workertest"
+main = "src/worker.ts"
+compatibility_date = "2023-11-21"
