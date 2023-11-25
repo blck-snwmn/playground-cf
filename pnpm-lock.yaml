@@ -195,6 +195,22 @@ importers:
         specifier: ^3.16.0
         version: 3.16.0
 
+  rssreader:
+    dependencies:
+      fast-xml-parser:
+        specifier: ^4.3.2
+        version: 4.3.2
+    devDependencies:
+      '@cloudflare/workers-types':
+        specifier: ^4.20230419.0
+        version: 4.20231025.0
+      typescript:
+        specifier: ^5.0.4
+        version: 5.3.2
+      wrangler:
+        specifier: ^3.0.0
+        version: 3.16.0
+
   sample-ai:
     devDependencies:
       '@cloudflare/ai':
@@ -2029,6 +2045,13 @@ packages:
       micromatch: 4.0.5
     dev: true
 
+  /fast-xml-parser@4.3.2:
+    resolution: {integrity: sha512-rmrXUXwbJedoXkStenj1kkljNF7ugn5ZjR9FJcwmCfcCbtOMDghPajbc+Tck6vE6F5XsDmx+Pr2le9fw8+pXBg==}
+    hasBin: true
+    dependencies:
+      strnum: 1.0.5
+    dev: false
+
   /fastq@1.15.0:
     resolution: {integrity: sha512-wBrocU2LCXXa+lWBt8RoIRD89Fi8OdABODa/kEnyeyjS5aZO5/GNvI5sEINADqP/h8M29UHTHUb53sUu5Ihqdw==}
     dependencies:
@@ -3845,6 +3868,10 @@ packages:
     dependencies:
       acorn: 8.10.0
     dev: true
+
+  /strnum@1.0.5:
+    resolution: {integrity: sha512-J8bbNyKKXl5qYcR36TIO8W3mVGVHrmmxsd5PAItGkmyzwJvybiw2IVq5nqd0i4LSNSkB/sx9VHllbfFdr9k1JA==}
+    dev: false
 
   /supports-color@5.5.0:
     resolution: {integrity: sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==}
