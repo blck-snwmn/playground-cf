@@ -1,0 +1,14 @@
+name = "constexample"
+main = "src/index.ts"
+compatibility_date = "2023-11-21"
+
+vars = { PARAM = "none" }
+
+[env.foo]
+vars = { PARAM = "foo" }
+
+[env.bar]
+vars = { PARAM = "bar" }
+
+[env.other]
+vars = { PARAM = "other" }
