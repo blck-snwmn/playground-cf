@@ -26,13 +26,13 @@ describe("Wrangler", () => {
 	});
 
 	it("Should return Hello World", async () => {
-		const res = await worker.fetch("/");
+		const res = await worker.fetch(`http://localhost:${worker.port}/`);
 		expect(res.status).toBe(200);
 		expect(await res.text()).toBe("Hello World!");
 	});
 
 	it("Should return the environment variable", async () => {
-		const res = await worker.fetch("/env");
+		const res = await worker.fetch(`http://localhost:${worker.port}/env`);
 		expect(res.status).toBe(200);
 		expect(await res.text()).toBe("Cloudflare");
 	});
@@ -44,7 +44,9 @@ describe("Wrangler", () => {
 	// });
 
 	it("Should return 200 before put", async () => {
-		const res = await worker.fetch("/buket", { method: "PUT" });
+		const res = await worker.fetch(`http://localhost:${worker.port}/buket`, {
+			method: "PUT",
+		});
 		expect(res.status).toBe(200);
 		expect(await res.text()).toBe("OK");
 
