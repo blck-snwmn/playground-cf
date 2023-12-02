@@ -17,6 +17,7 @@ describe("Wrangler", () => {
 					preview_bucket_name: "my-bucket-preview",
 				},
 			],
+			port: 8787,
 			experimental: { disableExperimentalWarning: true },
 		});
 	});
@@ -26,13 +27,13 @@ describe("Wrangler", () => {
 	});
 
 	it("Should return Hello World", async () => {
-		const res = await worker.fetch("/");
+		const res = await worker.fetch("http://localhost:8787/");
 		expect(res.status).toBe(200);
 		expect(await res.text()).toBe("Hello World!");
 	});
 
 	it("Should return the environment variable", async () => {
-		const res = await worker.fetch("/env");
+		const res = await worker.fetch("http://localhost:8787/env");
 		expect(res.status).toBe(200);
 		expect(await res.text()).toBe("Cloudflare");
 	});
@@ -44,7 +45,9 @@ describe("Wrangler", () => {
 	// });
 
 	it("Should return 200 before put", async () => {
-		const res = await worker.fetch("/buket", { method: "PUT" });
+		const res = await worker.fetch("http://localhost:8787/buket", {
+			method: "PUT",
+		});
 		expect(res.status).toBe(200);
 		expect(await res.text()).toBe("OK");
 

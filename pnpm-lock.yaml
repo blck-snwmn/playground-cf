@@ -21,8 +21,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.16.0
-        version: 3.16.0
+        specifier: ^3.18.0
+        version: 3.18.0
 
   cfworkerservices/app:
     devDependencies:
@@ -33,8 +33,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: 3.16.0
-        version: 3.16.0
+        specifier: 3.18.0
+        version: 3.18.0
 
   cfworkerservices/gateway:
     devDependencies:
@@ -45,8 +45,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: 3.16.0
-        version: 3.16.0
+        specifier: 3.18.0
+        version: 3.18.0
 
   constexample:
     devDependencies:
@@ -57,8 +57,8 @@ importers:
         specifier: ^5.0.4
         version: 5.3.2
       wrangler:
-        specifier: ^3.0.0
-        version: 3.16.0
+        specifier: ^3.18.0
+        version: 3.18.0
 
   cryptoworker:
     devDependencies:
@@ -69,8 +69,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.16.0
-        version: 3.16.0
+        specifier: ^3.18.0
+        version: 3.18.0
 
   d1-kysely:
     devDependencies:
@@ -93,8 +93,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.16.0
-        version: 3.16.0
+        specifier: ^3.18.0
+        version: 3.18.0
 
   envsample:
     devDependencies:
@@ -105,8 +105,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.16.0
-        version: 3.16.0
+        specifier: ^3.18.0
+        version: 3.18.0
 
   hello-ai-worker:
     dependencies:
@@ -121,8 +121,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.16.0
-        version: 3.16.0
+        specifier: ^3.18.0
+        version: 3.18.0
 
   hello-browser-worker:
     devDependencies:
@@ -139,8 +139,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.16.0
-        version: 3.16.0
+        specifier: ^3.18.0
+        version: 3.18.0
 
   hello-vectorize:
     devDependencies:
@@ -151,8 +151,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.16.0
-        version: 3.16.0
+        specifier: ^3.18.0
+        version: 3.18.0
 
   hello-workerqueue:
     devDependencies:
@@ -163,8 +163,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.16.0
-        version: 3.16.0
+        specifier: ^3.18.0
+        version: 3.18.0
 
   langchain-worker:
     dependencies:
@@ -182,8 +182,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.16.0
-        version: 3.16.0
+        specifier: ^3.18.0
+        version: 3.18.0
 
   langchain-worker-ai:
     dependencies:
@@ -204,8 +204,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.16.0
-        version: 3.16.0
+        specifier: ^3.18.0
+        version: 3.18.0
 
   rssreader:
     dependencies:
@@ -220,8 +220,8 @@ importers:
         specifier: ^5.0.4
         version: 5.3.2
       wrangler:
-        specifier: ^3.0.0
-        version: 3.16.0
+        specifier: ^3.18.0
+        version: 3.18.0
 
   sample-ai:
     devDependencies:
@@ -235,8 +235,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.16.0
-        version: 3.16.0
+        specifier: ^3.18.0
+        version: 3.18.0
 
   send-email-worker:
     dependencies:
@@ -251,8 +251,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.16.0
-        version: 3.16.0
+        specifier: ^3.18.0
+        version: 3.18.0
 
   stream-manager:
     dependencies:
@@ -267,8 +267,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.16.0
-        version: 3.16.0
+        specifier: ^3.18.0
+        version: 3.18.0
 
   tailworker:
     devDependencies:
@@ -279,8 +279,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.16.0
-        version: 3.16.0
+        specifier: ^3.18.0
+        version: 3.18.0
 
   workertest:
     devDependencies:
@@ -294,8 +294,8 @@ importers:
         specifier: ^0.34.6
         version: 0.34.6
       wrangler:
-        specifier: ^3.0.0
-        version: 3.16.0
+        specifier: ^3.18.0
+        version: 3.18.0
 
 packages:
 
@@ -3073,8 +3073,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /miniflare@3.20231030.0:
-    resolution: {integrity: sha512-iCg1dNauUG+kNp7jizcNmV/1XFItuTDvD/6xIC34PrszgKxYCbBO2R72y5NEDJTwaqr5ohQI/320wuJ8GEe7nQ==}
+  /miniflare@3.20231030.2:
+    resolution: {integrity: sha512-+DYdMqWlUaY4wBylIjewNu8OVsPFquYjQkxoSb2jGIMBmlKaef65Hn2Bu8sub5tQzQ8tLO0FRklmD2Upx0HCCQ==}
     engines: {node: '>=16.13'}
     hasBin: true
     dependencies:
@@ -4264,8 +4264,8 @@ packages:
       '@cloudflare/workerd-windows-64': 1.20231030.0
     dev: true
 
-  /wrangler@3.16.0:
-    resolution: {integrity: sha512-MIx35sSdFKE3hnfWB6xWUnrt3OiyKK+PQnc9kFLjksLESX0tLmEk1gdvThYHliY90kkelS+nbH48SUGTFAI5BA==}
+  /wrangler@3.18.0:
+    resolution: {integrity: sha512-3UrmldsD84JDBa7HRZ5ACFr1nH+ZZs+Hth37Iv/mAaW2DiQOGcrevKwn4dofmTQO2qYP01u1vtfVJxLM0mq+1w==}
     engines: {node: '>=16.17.0'}
     hasBin: true
     dependencies:
@@ -4275,7 +4275,7 @@ packages:
       blake3-wasm: 2.1.5
       chokidar: 3.5.3
       esbuild: 0.17.19
-      miniflare: 3.20231030.0
+      miniflare: 3.20231030.2
       nanoid: 3.3.6
       path-to-regexp: 6.2.1
       resolve.exports: 2.0.2
