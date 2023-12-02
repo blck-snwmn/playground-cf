@@ -17,7 +17,7 @@ describe("Wrangler", () => {
 					preview_bucket_name: "my-bucket-preview",
 				},
 			],
-			port: 8787,
+			// port: 8787,
 			experimental: { disableExperimentalWarning: true },
 		});
 	});
