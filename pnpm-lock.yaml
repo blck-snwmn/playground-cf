@@ -15,68 +15,68 @@ importers:
   cacheworker:
     devDependencies:
       '@cloudflare/workers-types':
-        specifier: ^4.20231025.0
-        version: 4.20231025.0
+        specifier: ^4.20231121.0
+        version: 4.20231121.0
       typescript:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.16.0
-        version: 3.16.0
+        specifier: ^3.18.0
+        version: 3.18.0
 
   cfworkerservices/app:
     devDependencies:
       '@cloudflare/workers-types':
-        specifier: ^4.20231025.0
-        version: 4.20231025.0
+        specifier: ^4.20231121.0
+        version: 4.20231121.0
       typescript:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: 3.16.0
-        version: 3.16.0
+        specifier: 3.18.0
+        version: 3.18.0
 
   cfworkerservices/gateway:
     devDependencies:
       '@cloudflare/workers-types':
-        specifier: ^4.20231025.0
-        version: 4.20231025.0
+        specifier: ^4.20231121.0
+        version: 4.20231121.0
       typescript:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: 3.16.0
-        version: 3.16.0
+        specifier: 3.18.0
+        version: 3.18.0
 
   constexample:
     devDependencies:
       '@cloudflare/workers-types':
-        specifier: ^4.20230419.0
-        version: 4.20231025.0
+        specifier: ^4.20231121.0
+        version: 4.20231121.0
       typescript:
         specifier: ^5.0.4
         version: 5.3.2
       wrangler:
-        specifier: ^3.0.0
-        version: 3.16.0
+        specifier: ^3.18.0
+        version: 3.18.0
 
   cryptoworker:
     devDependencies:
       '@cloudflare/workers-types':
-        specifier: ^4.20230419.0
-        version: 4.20231025.0
+        specifier: ^4.20231121.0
+        version: 4.20231121.0
       typescript:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.16.0
-        version: 3.16.0
+        specifier: ^3.18.0
+        version: 3.18.0
 
   d1-kysely:
     devDependencies:
       '@cloudflare/workers-types':
-        specifier: ^4.20231025.0
-        version: 4.20231025.0
+        specifier: ^4.20231121.0
+        version: 4.20231121.0
       kysely:
         specifier: ^0.26.3
         version: 0.26.3
@@ -93,36 +93,36 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.16.0
-        version: 3.16.0
+        specifier: ^3.18.0
+        version: 3.18.0
 
   envsample:
     devDependencies:
       '@cloudflare/workers-types':
-        specifier: ^4.20231025.0
-        version: 4.20231025.0
+        specifier: ^4.20231121.0
+        version: 4.20231121.0
       typescript:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.16.0
-        version: 3.16.0
+        specifier: ^3.18.0
+        version: 3.18.0
 
   hello-ai-worker:
     dependencies:
       '@cloudflare/ai':
-        specifier: ^1.0.30
-        version: 1.0.30
+        specifier: ^1.0.36
+        version: 1.0.36
     devDependencies:
       '@cloudflare/workers-types':
-        specifier: ^4.20231025.0
-        version: 4.20231025.0
+        specifier: ^4.20231121.0
+        version: 4.20231121.0
       typescript:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.16.0
-        version: 3.16.0
+        specifier: ^3.18.0
+        version: 3.18.0
 
   hello-browser-worker:
     devDependencies:
@@ -130,41 +130,41 @@ importers:
         specifier: ^0.0.5
         version: 0.0.5
       '@cloudflare/workers-types':
-        specifier: ^4.20231025.0
-        version: 4.20231025.0
+        specifier: ^4.20231121.0
+        version: 4.20231121.0
       '@types/node':
-        specifier: ^20.9.3
-        version: 20.9.3
+        specifier: ^20.10.2
+        version: 20.10.2
       typescript:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.16.0
-        version: 3.16.0
+        specifier: ^3.18.0
+        version: 3.18.0
 
   hello-vectorize:
     devDependencies:
       '@cloudflare/workers-types':
-        specifier: ^4.20231025.0
-        version: 4.20231025.0
+        specifier: ^4.20231121.0
+        version: 4.20231121.0
       typescript:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.16.0
-        version: 3.16.0
+        specifier: ^3.18.0
+        version: 3.18.0
 
   hello-workerqueue:
     devDependencies:
       '@cloudflare/workers-types':
-        specifier: ^4.20231025.0
-        version: 4.20231025.0
+        specifier: ^4.20231121.0
+        version: 4.20231121.0
       typescript:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.16.0
-        version: 3.16.0
+        specifier: ^3.18.0
+        version: 3.18.0
 
   langchain-worker:
     dependencies:
@@ -172,40 +172,40 @@ importers:
         specifier: 1.0.0-rc.12
         version: 1.0.0-rc.12
       langchain:
-        specifier: ^0.0.195
-        version: 0.0.195(@cloudflare/ai@1.0.30)(cheerio@1.0.0-rc.12)
+        specifier: ^0.0.200
+        version: 0.0.200(@cloudflare/ai@1.0.36)(cheerio@1.0.0-rc.12)
     devDependencies:
       '@cloudflare/workers-types':
-        specifier: ^4.20231025.0
-        version: 4.20231025.0
+        specifier: ^4.20231121.0
+        version: 4.20231121.0
       typescript:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.16.0
-        version: 3.16.0
+        specifier: ^3.18.0
+        version: 3.18.0
 
   langchain-worker-ai:
     dependencies:
       '@cloudflare/ai':
-        specifier: ^1.0.30
-        version: 1.0.30
+        specifier: ^1.0.36
+        version: 1.0.36
       cheerio:
         specifier: 1.0.0-rc.12
         version: 1.0.0-rc.12
       langchain:
-        specifier: ^0.0.195
-        version: 0.0.195(@cloudflare/ai@1.0.30)(cheerio@1.0.0-rc.12)
+        specifier: ^0.0.200
+        version: 0.0.200(@cloudflare/ai@1.0.36)(cheerio@1.0.0-rc.12)
     devDependencies:
       '@cloudflare/workers-types':
-        specifier: ^4.20231025.0
-        version: 4.20231025.0
+        specifier: ^4.20231121.0
+        version: 4.20231121.0
       typescript:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.16.0
-        version: 3.16.0
+        specifier: ^3.18.0
+        version: 3.18.0
 
   rssreader:
     dependencies:
@@ -214,29 +214,29 @@ importers:
         version: 4.3.2
     devDependencies:
       '@cloudflare/workers-types':
-        specifier: ^4.20230419.0
-        version: 4.20231025.0
+        specifier: ^4.20231121.0
+        version: 4.20231121.0
       typescript:
         specifier: ^5.0.4
         version: 5.3.2
       wrangler:
-        specifier: ^3.0.0
-        version: 3.16.0
+        specifier: ^3.18.0
+        version: 3.18.0
 
   sample-ai:
     devDependencies:
       '@cloudflare/ai':
-        specifier: ^1.0.30
-        version: 1.0.30
+        specifier: ^1.0.36
+        version: 1.0.36
       '@cloudflare/workers-types':
-        specifier: ^4.20231025.0
-        version: 4.20231025.0
+        specifier: ^4.20231121.0
+        version: 4.20231121.0
       typescript:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.16.0
-        version: 3.16.0
+        specifier: ^3.18.0
+        version: 3.18.0
 
   send-email-worker:
     dependencies:
@@ -245,48 +245,48 @@ importers:
         version: 3.0.16
     devDependencies:
       '@cloudflare/workers-types':
-        specifier: ^4.20231025.0
-        version: 4.20231025.0
+        specifier: ^4.20231121.0
+        version: 4.20231121.0
       typescript:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.16.0
-        version: 3.16.0
+        specifier: ^3.18.0
+        version: 3.18.0
 
   stream-manager:
     dependencies:
       hono:
-        specifier: ^3.10.2
-        version: 3.10.2
+        specifier: ^3.10.4
+        version: 3.10.4
     devDependencies:
       '@cloudflare/workers-types':
-        specifier: ^4.20231025.0
-        version: 4.20231025.0
+        specifier: ^4.20231121.0
+        version: 4.20231121.0
       typescript:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.16.0
-        version: 3.16.0
+        specifier: ^3.18.0
+        version: 3.18.0
 
   tailworker:
     devDependencies:
       '@cloudflare/workers-types':
-        specifier: ^4.20230419.0
-        version: 4.20231025.0
+        specifier: ^4.20231121.0
+        version: 4.20231121.0
       typescript:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.16.0
-        version: 3.16.0
+        specifier: ^3.18.0
+        version: 3.18.0
 
   workertest:
     devDependencies:
       '@cloudflare/workers-types':
-        specifier: ^4.20230419.0
-        version: 4.20231025.0
+        specifier: ^4.20231121.0
+        version: 4.20231121.0
       typescript:
         specifier: ^5.0.4
         version: 5.3.2
@@ -294,8 +294,8 @@ importers:
         specifier: ^0.34.6
         version: 0.34.6
       wrangler:
-        specifier: ^3.0.0
-        version: 3.16.0
+        specifier: ^3.18.0
+        version: 3.18.0
 
 packages:
 
@@ -448,8 +448,8 @@ packages:
     resolution: {integrity: sha512-hBzuU5+JjB2cqNZyszkDHZgOSrUUT8V3dhgRl8Q9Gp6dAj/H5+KILGjbhDpc3Iy9qmqlm/akuOI2ut9VUtzJxQ==}
     dev: true
 
-  /@cloudflare/ai@1.0.30:
-    resolution: {integrity: sha512-lGWcJWkguGCjfCMrLgBC81TogIyCfXX76CRgw/LS0BQEFu6FV0cqxxrzmq/X++PlWWUJfzxzUOhsdMLBA2pfAw==}
+  /@cloudflare/ai@1.0.36:
+    resolution: {integrity: sha512-CXBkVBvOHk1MvdAMJ1ThCUm0xCxlw/Z14YpICM7qTo9TMhUzwyYA3gyrN2cKUDDV/vsWsVY6plon5LKXqHCQ6g==}
 
   /@cloudflare/kv-asset-handler@0.2.0:
     resolution: {integrity: sha512-MVbXLbTcAotOPUj0pAMhVtJ+3/kFkwJqc5qNOleOZTv6QkZZABDMS21dSrSlVswEHwrpWC03e4fWytjqKvuE2A==}
@@ -516,8 +516,8 @@ packages:
     dev: true
     optional: true
 
-  /@cloudflare/workers-types@4.20231025.0:
-    resolution: {integrity: sha512-TkcZkntUTOcvJ4vgmwpNfLTclpMbmbClZCe62B25/VTukmyv91joRa4eKzSjzCZUXTbFHNmVdOpmGaaJU2U3+A==}
+  /@cloudflare/workers-types@4.20231121.0:
+    resolution: {integrity: sha512-+kWfpCkqiepwAKXyHoE0gnkPgkLhz0/9HOBIGhHRsUvUKvhUtm3mbqqoGRWgF1qcjzrDUBbrrOq4MYHfFtc2RA==}
     dev: true
 
   /@esbuild-plugins/node-globals-polyfill@0.2.3(esbuild@0.17.19):
@@ -950,6 +950,21 @@ packages:
     resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}
     dev: true
 
+  /@langchain/core@0.0.6:
+    resolution: {integrity: sha512-BL9M8lFlOT3ZSC54XRaEs08KV288SbSws8wrUopQLKT3PSfo1UGwbgcUC18NY86R8DJoIcyC6kQqpyiXIOQpSw==}
+    engines: {node: '>=18'}
+    dependencies:
+      ansi-styles: 5.2.0
+      camelcase: 6.3.0
+      decamelize: 1.2.0
+      js-tiktoken: 1.0.7
+      langsmith: 0.0.48
+      p-queue: 6.6.2
+      p-retry: 4.6.2
+      uuid: 9.0.1
+      zod: 3.22.4
+    dev: false
+
   /@mrleebo/prisma-ast@0.7.0:
     resolution: {integrity: sha512-GTPkYf1meO2UXXIrz/SIDFWz+P4kXo2PTt36LYh/oNxV1PieYi7ZgenQk4IV0ut71Je3Z8ZoNZ8Tr7v2c1X1pg==}
     engines: {node: '>=16'}
@@ -1237,7 +1252,7 @@ packages:
   /@types/cross-spawn@6.0.2:
     resolution: {integrity: sha512-KuwNhp3eza+Rhu8IFI5HUXRP0LIhqH5cAjubUvGXXthh4YYBuP2ntwEX+Cz8GJoZUHlKo247wPWOfA9LYEq4cw==}
     dependencies:
-      '@types/node': 20.9.3
+      '@types/node': 20.10.2
     dev: true
 
   /@types/debug@4.1.8:
@@ -1253,7 +1268,7 @@ packages:
   /@types/node-fetch@2.6.6:
     resolution: {integrity: sha512-95X8guJYhfqiuVVhRFxVQcf4hW/2bCuoPwDasMf/531STFoNoWTT7YDnWdXHEZKqAGUigmpG31r2FE70LwnzJw==}
     dependencies:
-      '@types/node': 20.9.3
+      '@types/node': 20.10.2
       form-data: 4.0.0
     dev: false
 
@@ -1261,8 +1276,8 @@ packages:
     resolution: {integrity: sha512-0OVfGupTl3NBFr8+iXpfZ8NR7jfFO+P1Q+IO/q0wbo02wYkP5gy36phojeYWpLQ6WAMjl+VfmqUk2YbUfp0irA==}
     dev: false
 
-  /@types/node@20.9.3:
-    resolution: {integrity: sha512-nk5wXLAXGBKfrhLB0cyHGbSqopS+nz0BUgZkUQqSHSSgdee0kssp1IAqlQOu333bW+gMNs2QREx7iynm19Abxw==}
+  /@types/node@20.10.2:
+    resolution: {integrity: sha512-37MXfxkb0vuIlRKHNxwCkb60PNBpR94u4efQuN4JgIAm66zfCDXGSAFCef9XUWFovX2R1ok6Z7MHhtdVXXkkIw==}
     dependencies:
       undici-types: 5.26.5
 
@@ -2300,8 +2315,8 @@ packages:
       type-fest: 0.8.1
     dev: true
 
-  /hono@3.10.2:
-    resolution: {integrity: sha512-QwJLjWs3e+nZ3b5nQrrdJpYCJqiTK744jeYhX7yhZdxwcQ3KIohBfzI2dA8gSF6HEZkmFUdiKL1BelJ8utIm4w==}
+  /hono@3.10.4:
+    resolution: {integrity: sha512-2LJd+a3qyvSuyFlyJSRN1CeH5wg6/Rjua/5L5gdT1W+4U7EUZtnHph74klbyysGg69sfZNXsIrR7PJWSjf2Vww==}
     engines: {node: '>=16.0.0'}
     dev: false
 
@@ -2566,8 +2581,8 @@ packages:
     engines: {node: '>=14.0.0'}
     dev: true
 
-  /langchain@0.0.195(@cloudflare/ai@1.0.30)(cheerio@1.0.0-rc.12):
-    resolution: {integrity: sha512-b3TOfhSUwxe2ZCr4yYlR5dciyy0qyqrDeqAfVFJKM0H7/ueFHFllr4uJydsbzC5+ahlqDFRbzUEK005sbHgdSQ==}
+  /langchain@0.0.200(@cloudflare/ai@1.0.36)(cheerio@1.0.0-rc.12):
+    resolution: {integrity: sha512-ljuwCLPd+NIp8sRtrI0zSHE17ZFbMODOc46JZjnXq0nt9QTF74S3K83y9una+U+w/r0iMmKY8H4QCHThULYHpg==}
     engines: {node: '>=18'}
     peerDependencies:
       '@aws-crypto/sha256-js': ^5.0.0
@@ -2580,16 +2595,17 @@ packages:
       '@aws-sdk/client-sfn': ^3.310.0
       '@aws-sdk/credential-provider-node': ^3.388.0
       '@azure/storage-blob': ^12.15.0
-      '@clickhouse/client': ^0.0.14
+      '@clickhouse/client': ^0.2.5
       '@cloudflare/ai': ^1.0.12
       '@elastic/elasticsearch': ^8.4.0
       '@getmetal/metal-sdk': '*'
       '@getzep/zep-js': ^0.9.0
-      '@gomomento/sdk': ^1.47.1
-      '@gomomento/sdk-core': ^1.47.1
-      '@gomomento/sdk-web': ^1.47.1
+      '@gomomento/sdk': ^1.51.1
+      '@gomomento/sdk-core': ^1.51.1
+      '@gomomento/sdk-web': ^1.51.1
       '@google-ai/generativelanguage': ^0.2.1
       '@google-cloud/storage': ^6.10.1
+      '@gradientai/nodejs-sdk': ^1.2.0
       '@huggingface/inference': ^2.6.4
       '@mozilla/readability': '*'
       '@notionhq/client': ^2.2.10
@@ -2646,6 +2662,7 @@ packages:
       neo4j-driver: '*'
       node-llama-cpp: '*'
       notion-to-md: ^3.1.0
+      officeparser: ^4.0.4
       pdf-parse: 1.1.1
       peggy: ^3.0.2
       pg: ^8.11.0
@@ -2654,6 +2671,7 @@ packages:
       playwright: ^1.32.1
       portkey-ai: ^0.1.11
       puppeteer: ^19.7.2
+      pyodide: ^0.24.1
       redis: ^4.6.4
       replicate: ^0.18.0
       sonix-speech-recognition: ^2.1.1
@@ -2708,6 +2726,8 @@ packages:
       '@google-ai/generativelanguage':
         optional: true
       '@google-cloud/storage':
+        optional: true
+      '@gradientai/nodejs-sdk':
         optional: true
       '@huggingface/inference':
         optional: true
@@ -2821,6 +2841,8 @@ packages:
         optional: true
       notion-to-md:
         optional: true
+      officeparser:
+        optional: true
       pdf-parse:
         optional: true
       peggy:
@@ -2836,6 +2858,8 @@ packages:
       portkey-ai:
         optional: true
       puppeteer:
+        optional: true
+      pyodide:
         optional: true
       redis:
         optional: true
@@ -2867,12 +2891,10 @@ packages:
         optional: true
     dependencies:
       '@anthropic-ai/sdk': 0.9.1
-      '@cloudflare/ai': 1.0.30
-      ansi-styles: 5.2.0
+      '@cloudflare/ai': 1.0.36
+      '@langchain/core': 0.0.6
       binary-extensions: 2.2.0
-      camelcase: 6.3.0
       cheerio: 1.0.0-rc.12
-      decamelize: 1.2.0
       expr-eval: 2.0.2
       flat: 5.0.2
       js-tiktoken: 1.0.7
@@ -2883,7 +2905,6 @@ packages:
       ml-distance: 4.0.1
       openai: 4.19.1
       openapi-types: 12.1.3
-      p-queue: 6.6.2
       p-retry: 4.6.2
       uuid: 9.0.1
       yaml: 2.3.2
@@ -3058,7 +3079,7 @@ packages:
       '@tsconfig/esm': 1.0.4
       '@tsconfig/node18': 2.0.1
       '@tsconfig/strictest': 2.0.2
-      '@types/node': 20.9.3
+      '@types/node': 20.10.2
       js-base64: 3.7.5
       mime-types: 2.1.35
     dev: false
@@ -3073,8 +3094,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /miniflare@3.20231030.0:
-    resolution: {integrity: sha512-iCg1dNauUG+kNp7jizcNmV/1XFItuTDvD/6xIC34PrszgKxYCbBO2R72y5NEDJTwaqr5ohQI/320wuJ8GEe7nQ==}
+  /miniflare@3.20231030.2:
+    resolution: {integrity: sha512-+DYdMqWlUaY4wBylIjewNu8OVsPFquYjQkxoSb2jGIMBmlKaef65Hn2Bu8sub5tQzQ8tLO0FRklmD2Upx0HCCQ==}
     engines: {node: '>=16.13'}
     hasBin: true
     dependencies:
@@ -4081,7 +4102,7 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite-node@0.34.6(@types/node@20.9.3):
+  /vite-node@0.34.6(@types/node@20.10.2):
     resolution: {integrity: sha512-nlBMJ9x6n7/Amaz6F3zJ97EBwR2FkzhBRxF5e+jE6LA3yi6Wtc2lyTij1OnDMIr34v5g/tVQtsVAzhT0jc5ygA==}
     engines: {node: '>=v14.18.0'}
     hasBin: true
@@ -4091,7 +4112,7 @@ packages:
       mlly: 1.4.2
       pathe: 1.1.1
       picocolors: 1.0.0
-      vite: 5.0.2(@types/node@20.9.3)
+      vite: 5.0.2(@types/node@20.10.2)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -4103,7 +4124,7 @@ packages:
       - terser
     dev: true
 
-  /vite@5.0.2(@types/node@20.9.3):
+  /vite@5.0.2(@types/node@20.10.2):
     resolution: {integrity: sha512-6CCq1CAJCNM1ya2ZZA7+jS2KgnhbzvxakmlIjN24cF/PXhRMzpM/z8QgsVJA/Dm5fWUWnVEsmtBoMhmerPxT0g==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -4131,7 +4152,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 20.9.3
+      '@types/node': 20.10.2
       esbuild: 0.19.7
       postcss: 8.4.31
       rollup: 4.5.0
@@ -4172,7 +4193,7 @@ packages:
     dependencies:
       '@types/chai': 4.3.11
       '@types/chai-subset': 1.3.5
-      '@types/node': 20.9.3
+      '@types/node': 20.10.2
       '@vitest/expect': 0.34.6
       '@vitest/runner': 0.34.6
       '@vitest/snapshot': 0.34.6
@@ -4191,8 +4212,8 @@ packages:
       strip-literal: 1.3.0
       tinybench: 2.5.1
       tinypool: 0.7.0
-      vite: 5.0.2(@types/node@20.9.3)
-      vite-node: 0.34.6(@types/node@20.9.3)
+      vite: 5.0.2(@types/node@20.10.2)
+      vite-node: 0.34.6(@types/node@20.10.2)
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
       - less
@@ -4264,8 +4285,8 @@ packages:
       '@cloudflare/workerd-windows-64': 1.20231030.0
     dev: true
 
-  /wrangler@3.16.0:
-    resolution: {integrity: sha512-MIx35sSdFKE3hnfWB6xWUnrt3OiyKK+PQnc9kFLjksLESX0tLmEk1gdvThYHliY90kkelS+nbH48SUGTFAI5BA==}
+  /wrangler@3.18.0:
+    resolution: {integrity: sha512-3UrmldsD84JDBa7HRZ5ACFr1nH+ZZs+Hth37Iv/mAaW2DiQOGcrevKwn4dofmTQO2qYP01u1vtfVJxLM0mq+1w==}
     engines: {node: '>=16.17.0'}
     hasBin: true
     dependencies:
@@ -4275,7 +4296,7 @@ packages:
       blake3-wasm: 2.1.5
       chokidar: 3.5.3
       esbuild: 0.17.19
-      miniflare: 3.20231030.0
+      miniflare: 3.20231030.2
       nanoid: 3.3.6
       path-to-regexp: 6.2.1
       resolve.exports: 2.0.2
