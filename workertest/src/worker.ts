@@ -20,17 +20,16 @@ export default {
 					return new Response("Error", { status: 500 });
 				}
 				return new Response("OK", { status: 200 });
-			} else {
-				const x = await env.MY_BUCKET.get("key");
-				if (!x) {
-					return new Response("Not found", { status: 404 });
-				}
-				const headers = new Headers();
-				x.writeHttpMetadata(headers);
-				headers.set("etag", x.etag);
-
-				return new Response(x.body, { headers });
 			}
+			const x = await env.MY_BUCKET.get("key");
+			if (!x) {
+				return new Response("Not found", { status: 404 });
+			}
+			const headers = new Headers();
+			x.writeHttpMetadata(headers);
+			headers.set("etag", x.etag);
+
+			return new Response(x.body, { headers });
 		}
 		return new Response("Hello World!");
 	},
