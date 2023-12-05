@@ -9,7 +9,7 @@
   "devDependencies": {
     "@cloudflare/puppeteer": "^0.0.5",
     "@cloudflare/workers-types": "^4.20231121.0",
-    "@types/node": "^20.10.2",
+    "@types/node": "^20.10.3",
     "typescript": "^5.3.2",
     "wrangler": "^3.18.0"
   }
