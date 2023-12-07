@@ -7,7 +7,7 @@
 		"ignore": ["node_modules/*", "*/build/*", "*/.wrangler/*"]
 	},
 	"linter": {
-		"ignore": ["node_modules/*", "*/build/*", "*/.wrangler/*"],
+		"ignore": ["node_modules/*", "*/build/*", "*/.wrangler/*", "*/gql/*"],
 		"enabled": true,
 		"rules": {
 			"recommended": true
