@@ -1,6 +1,5 @@
 import { Hono } from "hono";
 import * as jose from "jose";
-import { JsonWebTokenError } from "jsonwebtoken";
 
 type Bindings = {
 	JWK_URL: string;
