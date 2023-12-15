@@ -285,8 +285,8 @@ importers:
   stream-manager:
     dependencies:
       hono:
-        specifier: ^3.11.2
-        version: 3.11.2
+        specifier: ^3.11.7
+        version: 3.11.7
     devDependencies:
       '@cloudflare/workers-types':
         specifier: ^4.20231121.0
@@ -328,8 +328,8 @@ importers:
   ztesample:
     dependencies:
       hono:
-        specifier: ^3.11.2
-        version: 3.11.2
+        specifier: ^3.11.7
+        version: 3.11.7
       jose:
         specifier: ^5.1.3
         version: 5.1.3
@@ -4154,8 +4154,8 @@ packages:
       tslib: 2.6.2
     dev: true
 
-  /hono@3.11.2:
-    resolution: {integrity: sha512-UysqMvSVFBPoUvN8veT7w+lgVjbRYafZNsVQqrs1Ssrx8oByPBq9jwWaCLnjkGbfTydfDxILnPEf5/kbu8Wl/A==}
+  /hono@3.11.7:
+    resolution: {integrity: sha512-TcfAq7IdipF+9coxnuzYlSSBXbm9mTyWjjagLCv/2ampboNcKJdi+XCK5G48mHQtpI5+9Rj3J4FfcGgw9vzIww==}
     engines: {node: '>=16.0.0'}
     dev: false
 
