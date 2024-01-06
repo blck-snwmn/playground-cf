@@ -1,0 +1,11 @@
+name = "do-alarms"
+main = "src/index.ts"
+compatibility_date = "2023-12-18"
+
+[[durable_objects.bindings]]
+name = "DO"
+class_name = "DOSample"
+
+[[migrations]]
+tag = "v1"
+new_classes = ["DOSample"]
