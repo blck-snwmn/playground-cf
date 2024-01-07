@@ -34,7 +34,7 @@ async function list(env: Env): Promise<Response> {
 
 async function postMemo(env: Env, content: string, user: string, tag: string) {
 	const { success } = await env.DB.prepare(
-		`INSERT INTO memos (content, user, tag) VALUES (?, ?, ?)`,
+		"INSERT INTO memos (content, user, tag) VALUES (?, ?, ?)",
 	)
 		.bind(content, user, tag)
 		.run();
