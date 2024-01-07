@@ -90,8 +90,9 @@ app.post("/r2", async (c) => {
 			return c.json({ error: "not found" }, 404);
 		}
 		return c.newResponse(getonj.body);
-	} catch (e: any) {
-		return c.json({ error: e.message }, 500);
+	} catch (e) {
+		console.error(e);
+		return c.json({ error: "error" }, 500);
 	}
 });
 
