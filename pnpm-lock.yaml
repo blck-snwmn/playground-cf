@@ -49,8 +49,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: 3.18.0
-        version: 3.18.0
+        specifier: 3.22.3
+        version: 3.22.3
 
   cfworkerservices/gateway:
     devDependencies:
@@ -61,8 +61,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: 3.18.0
-        version: 3.18.0
+        specifier: 3.22.3
+        version: 3.22.3
 
   constexample:
     devDependencies:
