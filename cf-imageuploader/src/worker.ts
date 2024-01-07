@@ -79,12 +79,18 @@ app.post("/r2", async (c) => {
 	if (typeof f === "string") {
 		return c.json({ error: "bad request" }, 400);
 	}
+	if (!(f instanceof File)) {
+		return c.json({ error: "bad request" }, 400);
+	}
 	try {
 		// ファイルタイプはここでは気にしない
 		const putobj = await c.env.UPLOAD_BUCKET.put(
 			"image",
 			await f.arrayBuffer(),
 		);
+		if (!putobj) {
+			return c.json({ error: "error" }, 500);
+		}
 		const getonj = await c.env.UPLOAD_BUCKET.get(putobj.key);
 		if (!getonj) {
 			return c.json({ error: "not found" }, 404);
