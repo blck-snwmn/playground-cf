@@ -17,9 +17,10 @@ export default {
 		switch (request.method) {
 			case "GET":
 				return list(env);
-			case "POST":
+			case "POST": {
 				const { content, user, tag } = (await request.json()) as memo;
 				return postMemo(env, content, user, tag);
+			}
 			default:
 				return new Response("Method not allowed", { status: 405 });
 		}
