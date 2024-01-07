@@ -21,8 +21,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.18.0
-        version: 3.18.0
+        specifier: ^3.22.3
+        version: 3.22.3
 
   cf-imageuploader:
     dependencies:
@@ -37,7 +37,7 @@ importers:
         specifier: ^5.0.4
         version: 5.3.2
       wrangler:
-        specifier: ^3.19.0
+        specifier: ^3.22.3
         version: 3.22.3
 
   cfworkerservices/app:
@@ -73,8 +73,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.18.0
-        version: 3.18.0
+        specifier: ^3.22.3
+        version: 3.22.3
 
   cryptoworker:
     devDependencies:
@@ -85,8 +85,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.18.0
-        version: 3.18.0
+        specifier: ^3.22.3
+        version: 3.22.3
 
   d1-kysely:
     devDependencies:
@@ -109,8 +109,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.18.0
-        version: 3.18.0
+        specifier: ^3.22.3
+        version: 3.22.3
 
   do-alarms:
     devDependencies:
@@ -133,8 +133,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.18.0
-        version: 3.18.0
+        specifier: ^3.22.3
+        version: 3.22.3
 
   graphql:
     dependencies:
@@ -177,8 +177,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.18.0
-        version: 3.18.0
+        specifier: ^3.22.3
+        version: 3.22.3
 
   hello-browser-worker:
     devDependencies:
@@ -195,8 +195,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.18.0
-        version: 3.18.0
+        specifier: ^3.22.3
+        version: 3.22.3
 
   hello-d1:
     devDependencies:
@@ -222,8 +222,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.18.0
-        version: 3.18.0
+        specifier: ^3.22.3
+        version: 3.22.3
 
   hello-workerqueue:
     devDependencies:
@@ -234,8 +234,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.18.0
-        version: 3.18.0
+        specifier: ^3.22.3
+        version: 3.22.3
 
   langchain-worker:
     dependencies:
@@ -253,8 +253,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.18.0
-        version: 3.18.0
+        specifier: ^3.22.3
+        version: 3.22.3
 
   langchain-worker-ai:
     dependencies:
@@ -275,8 +275,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.18.0
-        version: 3.18.0
+        specifier: ^3.22.3
+        version: 3.22.3
 
   rssreader:
     dependencies:
@@ -291,8 +291,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.18.0
-        version: 3.18.0
+        specifier: ^3.22.3
+        version: 3.22.3
 
   sample-ai:
     devDependencies:
@@ -306,8 +306,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.18.0
-        version: 3.18.0
+        specifier: ^3.22.3
+        version: 3.22.3
 
   send-email-worker:
     dependencies:
@@ -322,8 +322,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.18.0
-        version: 3.18.0
+        specifier: ^3.22.3
+        version: 3.22.3
 
   stream-manager:
     dependencies:
@@ -338,8 +338,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.18.0
-        version: 3.18.0
+        specifier: ^3.22.3
+        version: 3.22.3
 
   tailworker:
     devDependencies:
@@ -350,8 +350,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.18.0
-        version: 3.18.0
+        specifier: ^3.22.3
+        version: 3.22.3
 
   workerslackcmd:
     devDependencies:
@@ -378,7 +378,7 @@ importers:
         version: 0.34.6
       wrangler:
         specifier: ^3.18.0
-        version: 3.18.0
+        version: 3.22.3
 
   ztesample:
     dependencies:
@@ -396,8 +396,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: ^3.18.0
-        version: 3.18.0
+        specifier: ^3.22.3
+        version: 3.22.3
 
 packages:
 
