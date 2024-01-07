@@ -73,7 +73,7 @@ app.get("/r2", async (c) => {
 
 app.post("/r2", async (c) => {
 	const body = await c.req.parseBody();
-	const f = body["file"];
+	const f = body.file;
 
 	// f が string の場合、bad requestにする
 	if (typeof f === "string") {
