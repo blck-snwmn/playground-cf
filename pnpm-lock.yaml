@@ -24,6 +24,22 @@ importers:
         specifier: ^3.18.0
         version: 3.18.0
 
+  cf-imageuploader:
+    dependencies:
+      hono:
+        specifier: ^3.11.7
+        version: 3.11.7
+    devDependencies:
+      '@cloudflare/workers-types':
+        specifier: ^4.20230419.0
+        version: 4.20231218.0
+      typescript:
+        specifier: ^5.0.4
+        version: 5.3.2
+      wrangler:
+        specifier: ^3.19.0
+        version: 3.22.3
+
   cfworkerservices/app:
     devDependencies:
       '@cloudflare/workers-types':
@@ -336,6 +352,18 @@ importers:
       wrangler:
         specifier: ^3.18.0
         version: 3.18.0
+
+  workerslackcmd:
+    devDependencies:
+      '@cloudflare/workers-types':
+        specifier: ^4.20221111.1
+        version: 4.20231218.0
+      typescript:
+        specifier: ^4.9.4
+        version: 4.9.5
+      wrangler:
+        specifier: 3.19.0
+        version: 3.19.0
 
   workertest:
     devDependencies:
@@ -6123,6 +6151,29 @@ packages:
       - utf-8-validate
     dev: true
 
+  /miniflare@3.20231030.3:
+    resolution: {integrity: sha512-lquHSh0XiO8uoWDujOLHtDS9mkUTJTc5C5amiQ6A++5y0f+DWiMqbDBvvwjlYf4Dvqk6ChFya9dztk7fg2ZVxA==}
+    engines: {node: '>=16.13'}
+    hasBin: true
+    dependencies:
+      acorn: 8.11.2
+      acorn-walk: 8.3.0
+      capnp-ts: 0.7.0
+      exit-hook: 2.2.1
+      glob-to-regexp: 0.4.1
+      source-map-support: 0.5.21
+      stoppable: 1.1.0
+      undici: 5.28.2
+      workerd: 1.20231030.0
+      ws: 8.14.2
+      youch: 3.3.3
+      zod: 3.22.4
+    transitivePeerDependencies:
+      - bufferutil
+      - supports-color
+      - utf-8-validate
+    dev: true
+
   /miniflare@3.20231218.1:
     resolution: {integrity: sha512-rl/wADgaRLpbl7EMobwbAt6BgVqkOoWsVQJAliIIUCRzC0s0xg7ZVeoV+DuQD4ffN4RySXsPnP97hp7ksc7ylA==}
     engines: {node: '>=16.13'}
@@ -7484,6 +7535,12 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  /typescript@4.9.5:
+    resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
+    dev: true
+
   /typescript@5.3.2:
     resolution: {integrity: sha512-6l+RyNy7oAHDfxC4FzSJcz9vnjTKxrLpDG5M2Vu4SHRVNg6xzqZp6LYSR9zjqQTu8DU/f5xwxUdADOkbrIX2gQ==}
     engines: {node: '>=14.17'}
@@ -8015,6 +8072,33 @@ packages:
       chokidar: 3.5.3
       esbuild: 0.17.19
       miniflare: 3.20231030.2
+      nanoid: 3.3.7
+      path-to-regexp: 6.2.1
+      resolve.exports: 2.0.2
+      selfsigned: 2.4.1
+      source-map: 0.6.1
+      source-map-support: 0.5.21
+      xxhash-wasm: 1.0.2
+    optionalDependencies:
+      fsevents: 2.3.3
+    transitivePeerDependencies:
+      - bufferutil
+      - supports-color
+      - utf-8-validate
+    dev: true
+
+  /wrangler@3.19.0:
+    resolution: {integrity: sha512-pY7xWqkQn6DJ+1vz9YHz2pCftEmK+JCTj9sqnucp0NZnlUiILDmBWegsjjCLZycgfiA62J213N7NvjLPr2LB8w==}
+    engines: {node: '>=16.17.0'}
+    hasBin: true
+    dependencies:
+      '@cloudflare/kv-asset-handler': 0.2.0
+      '@esbuild-plugins/node-globals-polyfill': 0.2.3(esbuild@0.17.19)
+      '@esbuild-plugins/node-modules-polyfill': 0.2.2(esbuild@0.17.19)
+      blake3-wasm: 2.1.5
+      chokidar: 3.5.3
+      esbuild: 0.17.19
+      miniflare: 3.20231030.3
       nanoid: 3.3.7
       path-to-regexp: 6.2.1
       resolve.exports: 2.0.2

@@ -1,0 +1,10 @@
+name = "cf-imageuploader"
+main = "src/worker.ts"
+compatibility_date = "2023-07-02"
+
+workers_dev = false
+
+[[r2_buckets]]
+binding = 'UPLOAD_BUCKET'
+bucket_name = 'image-upload'
+preview_bucket_name = 'image-upload'
