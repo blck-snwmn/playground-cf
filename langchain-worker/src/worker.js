@@ -1,8 +1,8 @@
+import { RetrievalQAChain } from "langchain/chains";
 import { CheerioWebBaseLoader } from "langchain/document_loaders/web/cheerio";
 import { OpenAIEmbeddings } from "langchain/embeddings/openai";
-import { MemoryVectorStore } from "langchain/vectorstores/memory";
 import { OpenAI } from "langchain/llms/openai";
-import { RetrievalQAChain } from "langchain/chains";
+import { MemoryVectorStore } from "langchain/vectorstores/memory";
 
 export default {
 	async fetch(request, env, ctx) {

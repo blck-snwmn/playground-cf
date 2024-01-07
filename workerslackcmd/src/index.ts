@@ -1,5 +1,5 @@
 export interface Env {
-	TOKEN: string
+	TOKEN: string;
 }
 
 interface SlackWebhookRequest {
@@ -21,13 +21,13 @@ export default {
 	async fetch(
 		request: Request,
 		env: Env,
-		ctx: ExecutionContext
+		ctx: ExecutionContext,
 	): Promise<Response> {
 		const form = await request.formData();
 		const token = form.get("token");
 		if (env.TOKEN !== token) {
 			// unmatch verification token
-			return new Response("failed to process", { status: 400 })
+			return new Response("failed to process", { status: 400 });
 		}
 		const sreq: SlackWebhookRequest = {
 			team_id: form.get("team_id"),
@@ -43,87 +43,90 @@ export default {
 			response_url: form.get("response_url"),
 			trigger_id: form.get("trigger_id"),
 		};
-		console.log(sreq)
-		return new Response(JSON.stringify({
-			response_type: "in_channel", // set ephemeral if only user who ran slack cmd can see the post
-			blocks: [
-				{
-					type: "header",
-					text: {
-						type: "plain_text",
-						text: "hello world"
-					}
-				},
-				{
-					type: "section",
-					text: {
-						type: "mrkdwn",
-						text: "this is mrkdwn"
-					}
-				},
-				{
-					type: "section",
-					text: {
-						type: "mrkdwn",
-						text: "this is mrkdwn2"
-					}
-				},
-				{
-					type: "context",
-					elements: [
-						{
+		console.log(sreq);
+		return new Response(
+			JSON.stringify({
+				response_type: "in_channel", // set ephemeral if only user who ran slack cmd can see the post
+				blocks: [
+					{
+						type: "header",
+						text: {
 							type: "plain_text",
-							text: "left"
+							text: "hello world",
 						},
-						{
-							type: "plain_text",
-							text: "right"
-						}
-					]
-				}
-			],
-			attachments: [
-				{
-					color: "#008000",
-					blocks: [
-						{
-							type: "section",
-							text: {
+					},
+					{
+						type: "section",
+						text: {
+							type: "mrkdwn",
+							text: "this is mrkdwn",
+						},
+					},
+					{
+						type: "section",
+						text: {
+							type: "mrkdwn",
+							text: "this is mrkdwn2",
+						},
+					},
+					{
+						type: "context",
+						elements: [
+							{
 								type: "plain_text",
-								text: "this is mrkdwn"
-							}
-						},
-					],
+								text: "left",
+							},
+							{
+								type: "plain_text",
+								text: "right",
+							},
+						],
+					},
+				],
+				attachments: [
+					{
+						color: "#008000",
+						blocks: [
+							{
+								type: "section",
+								text: {
+									type: "plain_text",
+									text: "this is mrkdwn",
+								},
+							},
+						],
+					},
+					{
+						color: "#ffff00",
+						blocks: [
+							{
+								type: "section",
+								text: {
+									type: "mrkdwn",
+									text: "• a\n• b\n• c",
+								},
+							},
+						],
+					},
+					{
+						color: "#ff0000",
+						blocks: [
+							{
+								type: "section",
+								text: {
+									type: "mrkdwn",
+									text: "this is mrkdwn",
+								},
+							},
+						],
+					},
+				],
+			}),
+			{
+				headers: {
+					"Content-type": "application/json",
 				},
-				{
-					color: "#ffff00",
-					blocks: [
-						{
-							type: "section",
-							text: {
-								type: "mrkdwn",
-								text: "• a\n• b\n• c"
-							}
-						},
-					],
-				},
-				{
-					color: "#ff0000",
-					blocks: [
-						{
-							type: "section",
-							text: {
-								type: "mrkdwn",
-								text: "this is mrkdwn"
-							}
-						},
-					],
-				}
-			]
-		}), {
-			headers: {
-				"Content-type": "application/json",
-			}
-		});
+			},
+		);
 	},
 };

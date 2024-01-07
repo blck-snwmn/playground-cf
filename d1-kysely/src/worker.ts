@@ -1,7 +1,7 @@
 import type { D1Database } from "@cloudflare/workers-types";
-import type { DB } from "./db/types";
-import { D1Dialect } from "kysely-d1";
 import { Kysely } from "kysely";
+import { D1Dialect } from "kysely-d1";
+import type { DB } from "./db/types";
 
 export interface Env {
 	DB: D1Database;

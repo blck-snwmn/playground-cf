@@ -4,8 +4,7 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"lint": "biome lint .",
-		"format": "biome format ."
+		"check": "biome check ."
 	},
 	"keywords": [],
 	"author": "",
