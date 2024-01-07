@@ -4,7 +4,7 @@ on:
   push:
 
 jobs:
-  lint:
+  check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -14,19 +14,7 @@ jobs:
           run_install: true
       - name: lint
         run: |
-          pnpm run lint
-
-  format:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 8
-          run_install: true
-      - name: lint
-        run: |
-          pnpm run format
+          pnpm run check
 
   test:
     runs-on: ubuntu-latest
