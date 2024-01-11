@@ -1,0 +1,10 @@
+name = "email-slack-worker"
+main = "src/index.ts"
+compatibility_date = "2023-01-27"
+usage_model = "bundled"
+env = { }
+
+workers_dev = false
+
+[triggers]
+crons = [ ]

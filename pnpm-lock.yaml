@@ -124,6 +124,18 @@ importers:
         specifier: ^3.22.3
         version: 3.22.3
 
+  email-slack-worker:
+    devDependencies:
+      '@cloudflare/workers-types':
+        specifier: ^4.20230628.0
+        version: 4.20231218.0
+      typescript:
+        specifier: ^5.3.3
+        version: 5.3.3
+      wrangler:
+        specifier: ^3.22.1
+        version: 3.22.3
+
   envsample:
     devDependencies:
       '@cloudflare/workers-types':
