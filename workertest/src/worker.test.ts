@@ -18,6 +18,7 @@ describe("Wrangler", () => {
 				},
 			],
 			experimental: { disableExperimentalWarning: true },
+			ip: "127.0.0.1",
 		});
 	});
 
