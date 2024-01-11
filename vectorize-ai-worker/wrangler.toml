@@ -1,0 +1,10 @@
+name = "vectorize-ai-worker"
+main = "src/worker.ts"
+compatibility_date = "2023-10-13"
+
+[[vectorize]]
+binding = "VECTORIZE_INDEX"
+index_name = "langchain-test"
+
+[ai]
+binding = "AI"

@@ -1,0 +1,19 @@
+{
+  "name": "vectorize-ai-worker",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler publish",
+    "start": "wrangler dev"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20231218.0",
+    "typescript": "^5.3.3",
+    "wrangler": "^3.22.1"
+  },
+  "dependencies": {
+    "@cloudflare/ai": "^1.0.47",
+    "cheerio": "^1.0.0-rc.12",
+    "langchain": "^0.0.213"
+  }
+}
