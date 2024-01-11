@@ -15,8 +15,8 @@ updates:
       dependencies:
         patterns:
           - "*"
-  - package-ecosystem: "github-actions" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  - package-ecosystem: "github-actions"
+    directory: "/"
     assignees:
       - blck-snwmn
     schedule:
