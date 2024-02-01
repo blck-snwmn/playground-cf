@@ -2,9 +2,9 @@
   "name": "send-email-worker",
   "version": "0.0.0",
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20231218.0",
+    "@cloudflare/workers-types": "^4.20240129.0",
     "typescript": "^5.3.3",
-    "wrangler": "^3.22.4"
+    "wrangler": "^3.26.0"
   },
   "private": true,
   "scripts": {
