@@ -2,9 +2,9 @@
   "name": "send-email-worker",
   "version": "0.0.0",
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20231218.0",
+    "@cloudflare/workers-types": "^4.20240208.0",
     "typescript": "^5.3.3",
-    "wrangler": "^3.22.4"
+    "wrangler": "^3.28.2"
   },
   "private": true,
   "scripts": {
@@ -12,6 +12,6 @@
     "deploy": "wrangler publish"
   },
   "dependencies": {
-    "mimetext": "^3.0.16"
+    "mimetext": "^3.0.21"
   }
 }
