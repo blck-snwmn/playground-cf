@@ -8,12 +8,12 @@
 		"start": "wrangler dev"
 	},
 	"devDependencies": {
-		"@cloudflare/workers-types": "^4.20231218.0",
+		"@cloudflare/workers-types": "^4.20240208.0",
 		"typescript": "^5.3.3",
-		"wrangler": "^3.22.4"
+		"wrangler": "^3.28.2"
 	},
 	"dependencies": {
-		"hono": "^3.12.3",
-		"jose": "^5.2.0"
+		"hono": "^4.0.2",
+		"jose": "^5.2.2"
 	}
 }
