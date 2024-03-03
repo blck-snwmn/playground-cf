@@ -274,6 +274,18 @@ importers:
         specifier: ^3.30.1
         version: 3.30.1(@cloudflare/workers-types@4.20240222.0)
 
+  html2svg:
+    devDependencies:
+      '@cloudflare/workers-types':
+        specifier: ^4.20240222.0
+        version: 4.20240222.0
+      typescript:
+        specifier: ^5.0.4
+        version: 5.3.3
+      wrangler:
+        specifier: ^3.0.0
+        version: 3.30.1(@cloudflare/workers-types@4.20240222.0)
+
   langchain-worker:
     dependencies:
       cheerio:
