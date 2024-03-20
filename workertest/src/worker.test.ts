@@ -1,39 +1,17 @@
-import { afterAll, beforeAll, describe, expect, it, test } from "vitest";
-import { unstable_dev } from "wrangler";
-import type { UnstableDevWorker } from "wrangler";
+import { describe, expect, it, test } from "vitest";
+import { SELF } from "cloudflare:test";
+
+import "./worker";
 
 describe("Wrangler", () => {
-	let worker: UnstableDevWorker;
-
-	beforeAll(async () => {
-		worker = await unstable_dev("./src/worker.ts", {
-			vars: {
-				NAME: "Cloudflare",
-			},
-			r2: [
-				{
-					binding: "MY_BUCKET",
-					bucket_name: "my-bucket",
-					preview_bucket_name: "my-bucket-preview",
-				},
-			],
-			experimental: { disableExperimentalWarning: true },
-			ip: "127.0.0.1",
-		});
-	});
-
-	afterAll(async () => {
-		await worker.stop();
-	});
-
 	it("Should return Hello World", async () => {
-		const res = await worker.fetch("http://localhost:8787/");
+		const res = await SELF.fetch("http://localhost:8787/");
 		expect(res.status).toBe(200);
 		expect(await res.text()).toBe("Hello World!");
 	});
 
 	it("Should return the environment variable", async () => {
-		const res = await worker.fetch("http://localhost:8787/env");
+		const res = await SELF.fetch("http://localhost:8787/env");
 		expect(res.status).toBe(200);
 		expect(await res.text()).toBe("Cloudflare");
 	});
@@ -45,13 +23,13 @@ describe("Wrangler", () => {
 	// });
 
 	it("Should return 200 before put", async () => {
-		const res = await worker.fetch("http://localhost:8787/buket", {
+		const res = await SELF.fetch("http://localhost:8787/buket", {
 			method: "PUT",
 		});
 		expect(res.status).toBe(200);
 		expect(await res.text()).toBe("OK");
 
-		const res2 = await worker.fetch("/buket");
+		const res2 = await SELF.fetch("http://localhost:8787/buket");
 		expect(res2.status).toBe(200);
 		expect(await res2.text()).toBe("value");
 	});
