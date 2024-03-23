@@ -1,3 +1,4 @@
+//biome-ignore lint/complexity/noBannedTypes: no banned types
 export type Env = {};
 
 export default {
