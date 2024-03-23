@@ -5,8 +5,8 @@ compatibility_flags = ["nodejs_compat"]
 
 [[queues.consumers]]
 queue = "workerqueuetest"
+max_batch_timeout = 3
 
 [[queues.producers]]
 queue = "workerqueuetest"
 binding = "WORKERTEST_QUEUE"
-

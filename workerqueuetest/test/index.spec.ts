@@ -1,30 +1,63 @@
-import { describe, expect, it } from "vitest";
+import { afterEach, expect, it, vi } from "vitest";
 import worker from "../src/index";
-// test/index.spec.ts
 import {
-	SELF,
 	createExecutionContext,
 	env,
 	waitOnExecutionContext,
 } from "cloudflare:test";
 
-// For now, you'll need to do something like this to get a correctly-typed
-// `Request` to pass to `worker.fetch()`.
 const IncomingRequest = Request<unknown, IncomingRequestCfProperties>;
 
-describe("Hello World worker", () => {
-	it("responds with Hello World! (unit style)", async () => {
-		const request = new IncomingRequest("http://example.com");
-		// Create an empty context to pass to `worker.fetch()`.
-		const ctx = createExecutionContext();
-		const response = await worker.fetch(request, env, ctx);
-		// Wait for all `Promise`s passed to `ctx.waitUntil()` to settle before running test assertions
-		await waitOnExecutionContext(ctx);
-		expect(await response.text()).toMatchInlineSnapshot(`"Hello World!"`);
-	});
+afterEach(() => {
+	vi.restoreAllMocks();
+});
 
-	it("responds with Hello World! (integration style)", async () => {
-		const response = await SELF.fetch("https://example.com");
-		expect(await response.text()).toMatchInlineSnapshot(`"Hello World!"`);
+it("produces queue message with mocked send", async () => {
+	// Intercept calls to `QUEUE_PRODUCER.send()`
+	const sendSpy = vi
+		.spyOn(env.WORKERTEST_QUEUE, "send")
+		.mockImplementation(async () => {});
+
+	// Enqueue job on queue
+	const request = new IncomingRequest("https://example.com/key", {
+		method: "POST",
+		body: "value",
+	});
+	const ctx = createExecutionContext();
+	const response = await worker.fetch(request, env, ctx);
+	await waitOnExecutionContext(ctx);
+
+	expect(response.status).toBe(202);
+	expect(await response.text()).toBe("Accepted");
+
+	// Check `QUEUE_PRODUCER.send()` was called
+	expect(sendSpy).toBeCalledTimes(1);
+	expect(sendSpy).toBeCalledWith({ key: "/key", value: "value" });
+});
+
+it("produces queue message with mocked consumer", async () => {
+	const consumerSpy = vi
+		.spyOn(worker, "queue")
+		.mockImplementation(async () => {});
+
+	const request = new IncomingRequest("https://example.com/key", {
+		method: "POST",
+		body: "another value",
+	});
+	const ctx = createExecutionContext();
+	const response = await worker.fetch(request, env, ctx);
+	await waitOnExecutionContext(ctx);
+
+	expect(response.status).toBe(202);
+	expect(await response.text()).toBe("Accepted");
+
+	// Wait for consumer to be called
+	await vi.waitUntil(() => consumerSpy.mock.calls.length > 0);
+	expect(consumerSpy).toBeCalledTimes(1);
+	const batch = consumerSpy.mock.lastCall?.[0];
+	expect(batch).toBeDefined();
+	expect(batch?.messages[0].body).toStrictEqual({
+		key: "/key",
+		value: "value",
 	});
 });
