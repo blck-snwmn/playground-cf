@@ -7,6 +7,8 @@ export default {
 		env: Env,
 		ctx: ExecutionContext,
 	): Promise<Response> {
-		return new Response("Hello World!");
+		const resp = await fetch("https://cloudflare.com");
+		const text = await resp.text();
+		return new Response(text, { status: resp.status });
 	},
 };
