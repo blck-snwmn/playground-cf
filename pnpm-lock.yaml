@@ -296,6 +296,24 @@ importers:
         specifier: ^3.0.0
         version: 3.30.1(@cloudflare/workers-types@4.20240222.0)
 
+  imgtrans:
+    devDependencies:
+      '@cloudflare/vitest-pool-workers':
+        specifier: ^0.1.0
+        version: 0.1.2(@cloudflare/workers-types@4.20240320.1)(@vitest/runner@1.3.0)(@vitest/snapshot@1.3.0)(vitest@1.3.0)
+      '@cloudflare/workers-types':
+        specifier: ^4.20240320.1
+        version: 4.20240320.1
+      typescript:
+        specifier: ^5.0.4
+        version: 5.3.3
+      vitest:
+        specifier: 1.3.0
+        version: 1.3.0
+      wrangler:
+        specifier: ^3.0.0
+        version: 3.30.1(@cloudflare/workers-types@4.20240320.1)
+
   langchain-worker:
     dependencies:
       cheerio:
