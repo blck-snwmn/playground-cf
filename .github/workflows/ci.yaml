@@ -16,7 +16,7 @@ jobs:
         run: |
           pnpm biome ci .
 
-  test:
+  test-workertest:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -27,3 +27,27 @@ jobs:
       - name: test
         run: |
           pnpm run --filter workertest test
+
+  test-workerqueuetest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+          run_install: true
+      - name: test
+        run: |
+          pnpm run --filter workerqueuetest test
+
+  test-workerrequesttest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+          run_install: true
+      - name: test
+        run: |
+          pnpm run --filter workerrequesttest test
