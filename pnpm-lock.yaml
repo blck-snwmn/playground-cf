@@ -542,6 +542,60 @@ importers:
         specifier: ^3.30.1
         version: 3.30.1(@cloudflare/workers-types@4.20240222.0)
 
+  testworker:
+    devDependencies:
+      '@cloudflare/vitest-pool-workers':
+        specifier: ^0.1.2
+        version: 0.1.2(@cloudflare/workers-types@4.20240405.0)(@vitest/runner@1.3.0)(@vitest/snapshot@1.3.0)(vitest@1.3.0)
+      '@cloudflare/workers-types':
+        specifier: ^4.20240222.0
+        version: 4.20240405.0
+      typescript:
+        specifier: ^5.3.3
+        version: 5.3.3
+      vitest:
+        specifier: 1.3.0
+        version: 1.3.0
+      wrangler:
+        specifier: ^3.30.1
+        version: 3.30.1(@cloudflare/workers-types@4.20240405.0)
+
+  testworkerqueue:
+    devDependencies:
+      '@cloudflare/vitest-pool-workers':
+        specifier: ^0.1.0
+        version: 0.1.2(@cloudflare/workers-types@4.20240405.0)(@vitest/runner@1.3.0)(@vitest/snapshot@1.3.0)(vitest@1.3.0)
+      '@cloudflare/workers-types':
+        specifier: ^4.20240314.0
+        version: 4.20240405.0
+      typescript:
+        specifier: ^5.0.4
+        version: 5.3.3
+      vitest:
+        specifier: 1.3.0
+        version: 1.3.0
+      wrangler:
+        specifier: ^3.0.0
+        version: 3.30.1(@cloudflare/workers-types@4.20240405.0)
+
+  testworkerrequest:
+    devDependencies:
+      '@cloudflare/vitest-pool-workers':
+        specifier: ^0.1.0
+        version: 0.1.2(@cloudflare/workers-types@4.20240405.0)(@vitest/runner@1.3.0)(@vitest/snapshot@1.3.0)(vitest@1.3.0)
+      '@cloudflare/workers-types':
+        specifier: ^4.20240320.1
+        version: 4.20240405.0
+      typescript:
+        specifier: ^5.0.4
+        version: 5.3.3
+      vitest:
+        specifier: 1.3.0
+        version: 1.3.0
+      wrangler:
+        specifier: ^3.0.0
+        version: 3.30.1(@cloudflare/workers-types@4.20240405.0)
+
   vectorize-ai-worker:
     dependencies:
       '@cloudflare/ai':
@@ -564,42 +618,6 @@ importers:
         specifier: ^3.30.1
         version: 3.30.1(@cloudflare/workers-types@4.20240222.0)
 
-  workerqueuetest:
-    devDependencies:
-      '@cloudflare/vitest-pool-workers':
-        specifier: ^0.1.0
-        version: 0.1.2(@cloudflare/workers-types@4.20240320.1)(@vitest/runner@1.3.0)(@vitest/snapshot@1.3.0)(vitest@1.3.0)
-      '@cloudflare/workers-types':
-        specifier: ^4.20240314.0
-        version: 4.20240320.1
-      typescript:
-        specifier: ^5.0.4
-        version: 5.3.3
-      vitest:
-        specifier: 1.3.0
-        version: 1.3.0
-      wrangler:
-        specifier: ^3.0.0
-        version: 3.30.1(@cloudflare/workers-types@4.20240320.1)
-
-  workerrequesttest:
-    devDependencies:
-      '@cloudflare/vitest-pool-workers':
-        specifier: ^0.1.0
-        version: 0.1.2(@cloudflare/workers-types@4.20240320.1)(@vitest/runner@1.3.0)(@vitest/snapshot@1.3.0)(vitest@1.3.0)
-      '@cloudflare/workers-types':
-        specifier: ^4.20240320.1
-        version: 4.20240320.1
-      typescript:
-        specifier: ^5.0.4
-        version: 5.3.3
-      vitest:
-        specifier: 1.3.0
-        version: 1.3.0
-      wrangler:
-        specifier: ^3.0.0
-        version: 3.30.1(@cloudflare/workers-types@4.20240320.1)
-
   workerslackcmd:
     devDependencies:
       '@cloudflare/workers-types':
@@ -610,24 +628,6 @@ importers:
         version: 5.3.3
       wrangler:
         specifier: 3.30.1
-        version: 3.30.1(@cloudflare/workers-types@4.20240222.0)
-
-  workertest:
-    devDependencies:
-      '@cloudflare/vitest-pool-workers':
-        specifier: ^0.1.2
-        version: 0.1.2(@cloudflare/workers-types@4.20240222.0)(@vitest/runner@1.3.0)(@vitest/snapshot@1.3.0)(vitest@1.3.0)
-      '@cloudflare/workers-types':
-        specifier: ^4.20240222.0
-        version: 4.20240222.0
-      typescript:
-        specifier: ^5.3.3
-        version: 5.3.3
-      vitest:
-        specifier: ^1.3.0
-        version: 1.3.0
-      wrangler:
-        specifier: ^3.30.1
         version: 3.30.1(@cloudflare/workers-types@4.20240222.0)
 
   ztesample:
@@ -1507,30 +1507,6 @@ packages:
       util: 0.12.5
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /@cloudflare/vitest-pool-workers@0.1.2(@cloudflare/workers-types@4.20240222.0)(@vitest/runner@1.3.0)(@vitest/snapshot@1.3.0)(vitest@1.3.0):
-    resolution: {integrity: sha512-scoOJJfGbo3Z0W3dYkEMjXoq4ZamyGb4ctA3pYg5Aeqc/26Fu0ow0iupOGWi8qkek+2FVKDio2d/J+4DH70bqw==}
-    peerDependencies:
-      '@vitest/runner': 1.3.0
-      '@vitest/snapshot': 1.3.0
-      vitest: 1.3.0
-    dependencies:
-      '@vitest/runner': 1.3.0
-      '@vitest/snapshot': 1.3.0
-      birpc: 0.2.14
-      cjs-module-lexer: 1.2.3
-      devalue: 4.3.2
-      esbuild: 0.17.19
-      miniflare: 3.20240304.2
-      vitest: 1.3.0
-      wrangler: 3.34.2(@cloudflare/workers-types@4.20240222.0)
-      zod: 3.22.4
-    transitivePeerDependencies:
-      - '@cloudflare/workers-types'
-      - bufferutil
-      - supports-color
-      - utf-8-validate
     dev: true
 
   /@cloudflare/vitest-pool-workers@0.1.2(@cloudflare/workers-types@4.20240320.1)(@vitest/runner@1.3.0)(@vitest/snapshot@1.3.0)(vitest@1.3.0):
@@ -11839,7 +11815,7 @@ packages:
       strip-literal: 2.0.0
       tinybench: 2.5.1
       tinypool: 0.8.2
-      vite: 5.1.4
+      vite: 5.1.7
       vite-node: 1.3.0
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
@@ -12146,39 +12122,6 @@ packages:
       chokidar: 3.5.3
       esbuild: 0.17.19
       miniflare: 3.20240223.0
-      nanoid: 3.3.7
-      path-to-regexp: 6.2.1
-      resolve: 1.22.8
-      resolve.exports: 2.0.2
-      selfsigned: 2.4.1
-      source-map: 0.6.1
-      xxhash-wasm: 1.0.2
-    optionalDependencies:
-      fsevents: 2.3.3
-    transitivePeerDependencies:
-      - bufferutil
-      - supports-color
-      - utf-8-validate
-    dev: true
-
-  /wrangler@3.34.2(@cloudflare/workers-types@4.20240222.0):
-    resolution: {integrity: sha512-j580WXlOe0GtYdcREym7FLcaaZq9+RZEBuzOtKXx74KKUlEC8cglgf5WWa2C2OpEtJCcrAieEHsNXe7mhy9knA==}
-    engines: {node: '>=16.17.0'}
-    hasBin: true
-    peerDependencies:
-      '@cloudflare/workers-types': ^4.20230914.0
-    peerDependenciesMeta:
-      '@cloudflare/workers-types':
-        optional: true
-    dependencies:
-      '@cloudflare/kv-asset-handler': 0.3.1
-      '@cloudflare/workers-types': 4.20240222.0
-      '@esbuild-plugins/node-globals-polyfill': 0.2.3(esbuild@0.17.19)
-      '@esbuild-plugins/node-modules-polyfill': 0.2.2(esbuild@0.17.19)
-      blake3-wasm: 2.1.5
-      chokidar: 3.5.3
-      esbuild: 0.17.19
-      miniflare: 3.20240304.2
       nanoid: 3.3.7
       path-to-regexp: 6.2.1
       resolve: 1.22.8
