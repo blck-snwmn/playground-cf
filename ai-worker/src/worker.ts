@@ -1,26 +1,26 @@
 import { Ai } from "@cloudflare/ai";
 
 export interface Env {
-	// biome-ignore lint/suspicious/noExplicitAny: no type
-	AI: any;
+	AI: Ai;
 }
 
 export default {
 	async fetch(request: Request, env: Env) {
-		const url = new URL(request.url);
-		const sys = url.searchParams.get("sys") ?? "math teacher";
-		const user = url.searchParams.get("user") ?? "write your favorite formula";
-
-		const ai = new Ai(env.AI);
-
 		const messages = [
-			{ role: "system", content: sys },
-			{ role: "user", content: user },
+			{ role: "system", content: "You are a friendly assistant" },
+			{
+				role: "user",
+				content: "What is the origin of the phrase Hello, World",
+			},
 		];
-		const response = await ai.run("@cf/meta/llama-2-7b-chat-int8", {
+
+		const stream = await env.AI.run("@cf/meta/llama-3-8b-instruct", {
 			messages,
+			stream: true,
 		});
 
-		return Response.json(response);
+		return new Response(stream, {
+			headers: { "content-type": "text/event-stream" },
+		});
 	},
 };
