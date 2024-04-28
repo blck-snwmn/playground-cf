@@ -26,6 +26,7 @@ app.get("/", async (c) => {
 	return streamText(c, async (stream) => {
 		const chunks = events(new Response(apiStream));
 		for await (const chunk of chunks) {
+			// biome-ignore lint/style/noNonNullAssertion: <explanation>
 			const data = JSON.parse(chunk.data!);
 			stream.write(data.response);
 		}
