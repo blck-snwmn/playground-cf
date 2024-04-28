@@ -2,14 +2,14 @@
 	"$schema": "https://biomejs.dev/schemas/1.3.3/schema.json",
 	"organizeImports": {
 		"enabled": true,
-		"ignore": ["graphql/src/gql/*", "node_modules/*"]
+		"ignore": ["graphql-api/src/gql/*", "node_modules/*"]
 	},
 	"formatter": {
 		"ignore": [
 			"node_modules/*",
 			"*/build/*",
 			"*/.wrangler/*",
-			"graphql/src/gql/*"
+			"graphql-api/src/gql/*"
 		]
 	},
 	"linter": {
