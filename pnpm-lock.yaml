@@ -93,8 +93,8 @@ importers:
         specifier: ^0.1.5
         version: 0.1.5
       hono:
-        specifier: ^4.0.8
-        version: 4.2.4
+        specifier: ^4.2.7
+        version: 4.2.7
     devDependencies:
       '@cloudflare/ai':
         specifier: ^1.1.0
@@ -368,8 +368,8 @@ importers:
   r2-imageuploader:
     dependencies:
       hono:
-        specifier: ^4.0.8
-        version: 4.2.4
+        specifier: ^4.2.7
+        version: 4.2.7
     devDependencies:
       '@cloudflare/workers-types':
         specifier: ^4.20240222.0
@@ -512,8 +512,8 @@ importers:
   stream-manager:
     dependencies:
       hono:
-        specifier: ^4.0.8
-        version: 4.0.8
+        specifier: ^4.2.7
+        version: 4.2.7
     devDependencies:
       '@cloudflare/workers-types':
         specifier: ^4.20240222.0
@@ -643,8 +643,8 @@ importers:
   zte-worker:
     dependencies:
       hono:
-        specifier: ^4.0.8
-        version: 4.0.8
+        specifier: ^4.2.7
+        version: 4.2.7
       jose:
         specifier: ^5.2.4
         version: 5.2.4
@@ -7702,13 +7702,8 @@ packages:
     engines: {node: '>=6'}
     dev: false
 
-  /hono@4.0.8:
-    resolution: {integrity: sha512-zhTXu32vXeEXajsqZVjPfoyO0/fgAKLLmPBpSDzRBMr7zZ5N8yV1FmsfWl2MYtm+MD8hD7knLCovx8Oaqubd4w==}
-    engines: {node: '>=16.0.0'}
-    dev: false
-
-  /hono@4.2.4:
-    resolution: {integrity: sha512-2T5Ahxh8tT0ISKCrNeA+OIwfD5W4EZ00iIMYBBCuiIivr+sOrZYOphinARSG7wL3nFsY6zkFHMMZbcR9CzEzug==}
+  /hono@4.2.7:
+    resolution: {integrity: sha512-k1xHi86tJnRIVvqhFMBDGFKJ8r5O+bEsT4P59ZK59r0F300Xd910/r237inVfuT/VmE86RQQffX4OYNda6dLXw==}
     engines: {node: '>=16.0.0'}
     dev: false
 
