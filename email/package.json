@@ -1,14 +1,14 @@
 {
-  "name": "email-slack-worker",
-  "version": "0.0.0",
-  "devDependencies": {
-    "@cloudflare/workers-types": "^4.20240222.0",
-    "typescript": "^5.3.3",
-    "wrangler": "^3.30.1"
-  },
-  "private": true,
-  "scripts": {
-    "start": "wrangler dev",
-    "deploy": "wrangler publish"
-  }
+	"name": "email-slack-worker",
+	"version": "0.0.0",
+	"devDependencies": {
+		"@cloudflare/workers-types": "^4.20240222.0",
+		"typescript": "^5.3.3",
+		"wrangler": "^3.30.1"
+	},
+	"private": true,
+	"scripts": {
+		"start": "wrangler dev",
+		"deploy": "wrangler publish"
+	}
 }

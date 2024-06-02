@@ -1,10 +1,10 @@
-import { afterEach, expect, it, vi } from "vitest";
-import worker from "../src/index";
 import {
 	createExecutionContext,
 	env,
 	waitOnExecutionContext,
 } from "cloudflare:test";
+import { afterEach, expect, it, vi } from "vitest";
+import worker from "../src/index";
 
 const IncomingRequest = Request<unknown, IncomingRequestCfProperties>;
 

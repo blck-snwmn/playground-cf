@@ -1,15 +1,15 @@
 {
-  "name": "sample-ai",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "deploy": "wrangler publish",
-    "start": "wrangler dev"
-  },
-  "devDependencies": {
-    "@cloudflare/ai": "^1.1.0",
-    "@cloudflare/workers-types": "^4.20240423.0",
-    "typescript": "^5.4.5",
-    "wrangler": "^3.52.0"
-  }
+	"name": "sample-ai",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler publish",
+		"start": "wrangler dev"
+	},
+	"devDependencies": {
+		"@cloudflare/ai": "^1.1.0",
+		"@cloudflare/workers-types": "^4.20240423.0",
+		"typescript": "^5.4.5",
+		"wrangler": "^3.52.0"
+	}
 }

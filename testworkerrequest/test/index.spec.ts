@@ -1,5 +1,5 @@
-import { afterEach, beforeAll, describe, expect, it } from "vitest";
 import { SELF, fetchMock } from "cloudflare:test";
+import { afterEach, beforeAll, describe, expect, it } from "vitest";
 
 beforeAll(() => {
 	fetchMock.activate();

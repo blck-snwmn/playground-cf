@@ -1,4 +1,4 @@
-import { type PlatformProxy } from "wrangler";
+import type { PlatformProxy } from "wrangler";
 
 // When using `wrangler.toml` to configure bindings,
 // `wrangler types` will generate types for those bindings

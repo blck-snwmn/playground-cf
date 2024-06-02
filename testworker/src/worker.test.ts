@@ -1,5 +1,5 @@
-import { describe, expect, it, test } from "vitest";
 import { SELF } from "cloudflare:test";
+import { describe, expect, it, test } from "vitest";
 
 import "./worker";
 

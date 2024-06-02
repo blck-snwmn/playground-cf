@@ -1,4 +1,4 @@
-import { Ai } from "@cloudflare/ai";
+import type { Ai } from "@cloudflare/ai";
 
 export interface Env {
 	AI: Ai;

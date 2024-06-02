@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@biomejs/biome':
-        specifier: ^1.5.3
-        version: 1.5.3
+        specifier: ^1.7.3
+        version: 1.7.3
 
   ai-embedding-worker:
     dependencies:
@@ -32,7 +32,7 @@ importers:
     devDependencies:
       '@cloudflare/vitest-pool-workers':
         specifier: ^0.1.0
-        version: 0.1.2(@cloudflare/workers-types@4.20240423.0)(@vitest/runner@1.3.0)(@vitest/snapshot@1.3.0)(vitest@1.3.0)
+        version: 0.1.2(@cloudflare/workers-types@4.20240423.0)(@vitest/runner@1.5.0)(@vitest/snapshot@1.5.0)(vitest@1.3.0(@types/node@20.12.7))
       '@cloudflare/workers-types':
         specifier: ^4.20240423.0
         version: 4.20240423.0
@@ -41,7 +41,7 @@ importers:
         version: 5.4.5
       vitest:
         specifier: 1.3.0
-        version: 1.3.0
+        version: 1.3.0(@types/node@20.12.7)
       wrangler:
         specifier: ^3.0.0
         version: 3.52.0(@cloudflare/workers-types@4.20240423.0)
@@ -53,7 +53,7 @@ importers:
         version: 1.0.0-rc.12
       langchain:
         specifier: ^0.1.25
-        version: 0.1.33(@cloudflare/ai@1.1.0)(cheerio@1.0.0-rc.12)
+        version: 0.1.33(@cloudflare/ai@1.1.0)(cheerio@1.0.0-rc.12)(fast-xml-parser@4.3.5)(ignore@5.3.0)(jsonwebtoken@9.0.2)(lodash@4.17.21)(ws@8.16.0)
     devDependencies:
       '@cloudflare/workers-types':
         specifier: ^4.20240222.0
@@ -75,7 +75,7 @@ importers:
         version: 1.0.0-rc.12
       langchain:
         specifier: ^0.1.25
-        version: 0.1.33(@cloudflare/ai@1.1.0)(cheerio@1.0.0-rc.12)
+        version: 0.1.33(@cloudflare/ai@1.1.0)(cheerio@1.0.0-rc.12)(fast-xml-parser@4.3.5)(ignore@5.3.0)(jsonwebtoken@9.0.2)(lodash@4.17.21)(ws@8.16.0)
     devDependencies:
       '@cloudflare/workers-types':
         specifier: ^4.20240222.0
@@ -101,7 +101,7 @@ importers:
         version: 1.1.0
       '@cloudflare/vitest-pool-workers':
         specifier: ^0.1.0
-        version: 0.1.2(@cloudflare/workers-types@4.20240423.0)(@vitest/runner@1.3.0)(@vitest/snapshot@1.3.0)(vitest@1.3.0)
+        version: 0.1.2(@cloudflare/workers-types@4.20240423.0)(@vitest/runner@1.5.0)(@vitest/snapshot@1.5.0)(vitest@1.3.0(@types/node@20.12.7))
       '@cloudflare/workers-types':
         specifier: ^4.20240423.0
         version: 4.20240423.0
@@ -110,7 +110,7 @@ importers:
         version: 5.4.5
       vitest:
         specifier: 1.3.0
-        version: 1.3.0
+        version: 1.3.0(@types/node@20.12.7)
       wrangler:
         specifier: ^3.0.0
         version: 3.52.0(@cloudflare/workers-types@4.20240423.0)
@@ -125,7 +125,7 @@ importers:
         version: 1.0.0-rc.12
       langchain:
         specifier: ^0.1.25
-        version: 0.1.33(@cloudflare/ai@1.1.0)(cheerio@1.0.0-rc.12)
+        version: 0.1.33(@cloudflare/ai@1.1.0)(cheerio@1.0.0-rc.12)(fast-xml-parser@4.3.5)(ignore@5.3.0)(jsonwebtoken@9.0.2)(lodash@4.17.21)(ws@8.16.0)
     devDependencies:
       '@cloudflare/workers-types':
         specifier: ^4.20240222.0
@@ -204,7 +204,7 @@ importers:
         version: 5.4.5
       vitest:
         specifier: ^1.3.1
-        version: 1.5.0
+        version: 1.5.0(@types/node@20.12.7)
       wrangler:
         specifier: 3.30.1
         version: 3.30.1(@cloudflare/workers-types@4.20240405.0)
@@ -339,7 +339,7 @@ importers:
     devDependencies:
       '@cloudflare/vitest-pool-workers':
         specifier: ^0.1.0
-        version: 0.1.2(@cloudflare/workers-types@4.20240405.0)(@vitest/runner@1.3.0)(@vitest/snapshot@1.3.0)(vitest@1.3.0)
+        version: 0.1.2(@cloudflare/workers-types@4.20240405.0)(@vitest/runner@1.5.0)(@vitest/snapshot@1.5.0)(vitest@1.3.0(@types/node@20.12.7))
       '@cloudflare/workers-types':
         specifier: ^4.20240405.0
         version: 4.20240405.0
@@ -348,7 +348,7 @@ importers:
         version: 5.4.5
       vitest:
         specifier: 1.3.0
-        version: 1.3.0
+        version: 1.3.0(@types/node@20.12.7)
       wrangler:
         specifier: ^3.50.0
         version: 3.50.0(@cloudflare/workers-types@4.20240405.0)
@@ -391,7 +391,7 @@ importers:
         version: 2.8.0(@cloudflare/workers-types@4.20240222.0)(typescript@5.3.3)
       '@remix-run/react':
         specifier: ^2.8.0
-        version: 2.8.0(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)
+        version: 2.8.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@5.3.3)
       isbot:
         specifier: ^5.1.1
         version: 5.1.1
@@ -410,7 +410,7 @@ importers:
         version: 4.20240222.0
       '@remix-run/dev':
         specifier: ^2.8.0
-        version: 2.8.0(typescript@5.3.3)(vite@5.1.7)(wrangler@3.30.1)
+        version: 2.8.0(@types/node@20.12.7)(ts-node@10.9.2(@types/node@20.12.7)(typescript@5.3.3))(typescript@5.3.3)(vite@5.1.7(@types/node@20.12.7))(wrangler@3.30.1(@cloudflare/workers-types@4.20240222.0))
       '@remix-run/node':
         specifier: ^2.8.0
         version: 2.8.0(typescript@5.3.3)
@@ -422,16 +422,16 @@ importers:
         version: 18.2.19
       '@typescript-eslint/eslint-plugin':
         specifier: ^7.1.0
-        version: 7.1.0(@typescript-eslint/parser@7.7.1)(eslint@8.57.0)(typescript@5.3.3)
+        version: 7.1.0(@typescript-eslint/parser@7.7.1(eslint@8.57.0)(typescript@5.3.3))(eslint@8.57.0)(typescript@5.3.3)
       eslint:
         specifier: ^8.38.0
         version: 8.57.0
       eslint-import-resolver-typescript:
         specifier: ^3.6.1
-        version: 3.6.1(@typescript-eslint/parser@7.7.1)(eslint-plugin-import@2.29.1)(eslint@8.57.0)
+        version: 3.6.1(@typescript-eslint/parser@7.7.1(eslint@8.57.0)(typescript@5.3.3))(eslint-plugin-import@2.29.1)(eslint@8.57.0)
       eslint-plugin-import:
         specifier: ^2.28.1
-        version: 2.29.1(@typescript-eslint/parser@7.7.1)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
+        version: 2.29.1(@typescript-eslint/parser@7.7.1(eslint@8.57.0)(typescript@5.3.3))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
       eslint-plugin-jsx-a11y:
         specifier: ^6.7.1
         version: 6.8.0(eslint@8.57.0)
@@ -449,10 +449,10 @@ importers:
         version: 5.3.3
       vite:
         specifier: ^5.1.7
-        version: 5.1.7
+        version: 5.1.7(@types/node@20.12.7)
       vite-tsconfig-paths:
         specifier: ^4.2.1
-        version: 4.3.1(typescript@5.3.3)(vite@5.1.7)
+        version: 4.3.1(typescript@5.3.3)(vite@5.1.7(@types/node@20.12.7))
       wrangler:
         specifier: ^3.30.1
         version: 3.30.1(@cloudflare/workers-types@4.20240222.0)
@@ -461,7 +461,7 @@ importers:
     devDependencies:
       '@cloudflare/vitest-pool-workers':
         specifier: ^0.1.0
-        version: 0.1.2(@cloudflare/workers-types@4.20240405.0)(@vitest/runner@1.3.0)(@vitest/snapshot@1.3.0)(vitest@1.3.0)
+        version: 0.1.2(@cloudflare/workers-types@4.20240405.0)(@vitest/runner@1.5.0)(@vitest/snapshot@1.5.0)(vitest@1.3.0(@types/node@20.12.7))
       '@cloudflare/workers-types':
         specifier: ^4.20240405.0
         version: 4.20240405.0
@@ -470,7 +470,7 @@ importers:
         version: 5.3.3
       vitest:
         specifier: 1.3.0
-        version: 1.3.0
+        version: 1.3.0(@types/node@20.12.7)
       wrangler:
         specifier: ^3.0.0
         version: 3.30.1(@cloudflare/workers-types@4.20240405.0)
@@ -479,7 +479,7 @@ importers:
     devDependencies:
       '@cloudflare/vitest-pool-workers':
         specifier: ^0.1.0
-        version: 0.1.2(@cloudflare/workers-types@4.20240405.0)(@vitest/runner@1.3.0)(@vitest/snapshot@1.3.0)(vitest@1.3.0)
+        version: 0.1.2(@cloudflare/workers-types@4.20240405.0)(@vitest/runner@1.5.0)(@vitest/snapshot@1.5.0)(vitest@1.3.0(@types/node@20.12.7))
       '@cloudflare/workers-types':
         specifier: ^4.20240405.0
         version: 4.20240405.0
@@ -488,7 +488,7 @@ importers:
         version: 5.3.3
       vitest:
         specifier: 1.3.0
-        version: 1.3.0
+        version: 1.3.0(@types/node@20.12.7)
       wrangler:
         specifier: ^3.0.0
         version: 3.30.1(@cloudflare/workers-types@4.20240405.0)
@@ -541,7 +541,7 @@ importers:
     devDependencies:
       '@cloudflare/vitest-pool-workers':
         specifier: ^0.1.2
-        version: 0.1.2(@cloudflare/workers-types@4.20240405.0)(@vitest/runner@1.3.0)(@vitest/snapshot@1.3.0)(vitest@1.3.0)
+        version: 0.1.2(@cloudflare/workers-types@4.20240405.0)(@vitest/runner@1.5.0)(@vitest/snapshot@1.5.0)(vitest@1.3.0(@types/node@20.12.7))
       '@cloudflare/workers-types':
         specifier: ^4.20240222.0
         version: 4.20240405.0
@@ -550,7 +550,7 @@ importers:
         version: 5.3.3
       vitest:
         specifier: 1.3.0
-        version: 1.3.0
+        version: 1.3.0(@types/node@20.12.7)
       wrangler:
         specifier: ^3.30.1
         version: 3.30.1(@cloudflare/workers-types@4.20240405.0)
@@ -559,7 +559,7 @@ importers:
     devDependencies:
       '@cloudflare/vitest-pool-workers':
         specifier: ^0.1.0
-        version: 0.1.2(@cloudflare/workers-types@4.20240405.0)(@vitest/runner@1.3.0)(@vitest/snapshot@1.3.0)(vitest@1.3.0)
+        version: 0.1.2(@cloudflare/workers-types@4.20240405.0)(@vitest/runner@1.5.0)(@vitest/snapshot@1.5.0)(vitest@1.3.0(@types/node@20.12.7))
       '@cloudflare/workers-types':
         specifier: ^4.20240314.0
         version: 4.20240405.0
@@ -568,7 +568,7 @@ importers:
         version: 5.3.3
       vitest:
         specifier: 1.3.0
-        version: 1.3.0
+        version: 1.3.0(@types/node@20.12.7)
       wrangler:
         specifier: ^3.0.0
         version: 3.30.1(@cloudflare/workers-types@4.20240405.0)
@@ -577,7 +577,7 @@ importers:
     devDependencies:
       '@cloudflare/vitest-pool-workers':
         specifier: ^0.1.0
-        version: 0.1.2(@cloudflare/workers-types@4.20240405.0)(@vitest/runner@1.3.0)(@vitest/snapshot@1.3.0)(vitest@1.3.0)
+        version: 0.1.2(@cloudflare/workers-types@4.20240405.0)(@vitest/runner@1.5.0)(@vitest/snapshot@1.5.0)(vitest@1.3.0(@types/node@20.12.7))
       '@cloudflare/workers-types':
         specifier: ^4.20240320.1
         version: 4.20240405.0
@@ -586,7 +586,7 @@ importers:
         version: 5.3.3
       vitest:
         specifier: 1.3.0
-        version: 1.3.0
+        version: 1.3.0(@types/node@20.12.7)
       wrangler:
         specifier: ^3.0.0
         version: 3.30.1(@cloudflare/workers-types@4.20240405.0)
@@ -999,56 +999,56 @@ packages:
     resolution: {integrity: sha512-dQjSq/7HaSjRM43FFGnv5keM2HsxpmyV1PfaSVm0nzzjwwTmjOe6J4bC8e3+pTEIgHaHj+1ZlLThRJ2auc/w1Q==}
     engines: {node: '>=6.9.0'}
 
-  '@biomejs/biome@1.5.3':
-    resolution: {integrity: sha512-yvZCa/g3akwTaAQ7PCwPWDCkZs3Qa5ONg/fgOUT9e6wAWsPftCjLQFPXBeGxPK30yZSSpgEmRCfpGTmVbUjGgg==}
-    engines: {node: '>=14.*'}
+  '@biomejs/biome@1.7.3':
+    resolution: {integrity: sha512-ogFQI+fpXftr+tiahA6bIXwZ7CSikygASdqMtH07J2cUzrpjyTMVc9Y97v23c7/tL1xCZhM+W9k4hYIBm7Q6cQ==}
+    engines: {node: '>=14.21.3'}
     hasBin: true
 
-  '@biomejs/cli-darwin-arm64@1.5.3':
-    resolution: {integrity: sha512-ImU7mh1HghEDyqNmxEZBoMPr8SxekkZuYcs+gynKlNW+TALQs7swkERiBLkG9NR0K1B3/2uVzlvYowXrmlW8hw==}
-    engines: {node: '>=14.*'}
+  '@biomejs/cli-darwin-arm64@1.7.3':
+    resolution: {integrity: sha512-eDvLQWmGRqrPIRY7AIrkPHkQ3visEItJKkPYSHCscSDdGvKzYjmBJwG1Gu8+QC5ed6R7eiU63LEC0APFBobmfQ==}
+    engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [darwin]
 
-  '@biomejs/cli-darwin-x64@1.5.3':
-    resolution: {integrity: sha512-vCdASqYnlpq/swErH7FD6nrFz0czFtK4k/iLgj0/+VmZVjineFPgevOb+Sr9vz0tk0GfdQO60bSpI74zU8M9Dw==}
-    engines: {node: '>=14.*'}
+  '@biomejs/cli-darwin-x64@1.7.3':
+    resolution: {integrity: sha512-JXCaIseKRER7dIURsVlAJacnm8SG5I0RpxZ4ya3dudASYUc68WGl4+FEN03ABY3KMIq7hcK1tzsJiWlmXyosZg==}
+    engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [darwin]
 
-  '@biomejs/cli-linux-arm64-musl@1.5.3':
-    resolution: {integrity: sha512-DYuMizUYUBYfS0IHGjDrOP1RGipqWfMGEvNEJ398zdtmCKLXaUvTimiox5dvx4X15mBK5M2m8wgWUgOP1giUpQ==}
-    engines: {node: '>=14.*'}
+  '@biomejs/cli-linux-arm64-musl@1.7.3':
+    resolution: {integrity: sha512-c8AlO45PNFZ1BYcwaKzdt46kYbuP6xPGuGQ6h4j3XiEDpyseRRUy/h+6gxj07XovmyxKnSX9GSZ6nVbZvcVUAw==}
+    engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [linux]
 
-  '@biomejs/cli-linux-arm64@1.5.3':
-    resolution: {integrity: sha512-cupBQv0sNF1OKqBfx7EDWMSsKwRrBUZfjXawT4s6hKV6ALq7p0QzWlxr/sDmbKMLOaLQtw2Qgu/77N9rm+f9Rg==}
-    engines: {node: '>=14.*'}
+  '@biomejs/cli-linux-arm64@1.7.3':
+    resolution: {integrity: sha512-phNTBpo7joDFastnmZsFjYcDYobLTx4qR4oPvc9tJ486Bd1SfEVPHEvJdNJrMwUQK56T+TRClOQd/8X1nnjA9w==}
+    engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [linux]
 
-  '@biomejs/cli-linux-x64-musl@1.5.3':
-    resolution: {integrity: sha512-UUHiAnlDqr2Y/LpvshBFhUYMWkl2/Jn+bi3U6jKuav0qWbbBKU/ByHgR4+NBxpKBYoCtWxhnmatfH1bpPIuZMw==}
-    engines: {node: '>=14.*'}
+  '@biomejs/cli-linux-x64-musl@1.7.3':
+    resolution: {integrity: sha512-UdEHKtYGWEX3eDmVWvQeT+z05T9/Sdt2+F/7zmMOFQ7boANeX8pcO6EkJPK3wxMudrApsNEKT26rzqK6sZRTRA==}
+    engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [linux]
 
-  '@biomejs/cli-linux-x64@1.5.3':
-    resolution: {integrity: sha512-YQrSArQvcv4FYsk7Q91Yv4uuu5F8hJyORVcv3zsjCLGkjIjx2RhjYLpTL733SNL7v33GmOlZY0eFR1ko38tuUw==}
-    engines: {node: '>=14.*'}
+  '@biomejs/cli-linux-x64@1.7.3':
+    resolution: {integrity: sha512-vnedYcd5p4keT3iD48oSKjOIRPYcjSNNbd8MO1bKo9ajg3GwQXZLAH+0Cvlr+eMsO67/HddWmscSQwTFrC/uPA==}
+    engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [linux]
 
-  '@biomejs/cli-win32-arm64@1.5.3':
-    resolution: {integrity: sha512-HxatYH7vf/kX9nrD+pDYuV2GI9GV8EFo6cfKkahAecTuZLPxryHx1WEfJthp5eNsE0+09STGkKIKjirP0ufaZA==}
-    engines: {node: '>=14.*'}
+  '@biomejs/cli-win32-arm64@1.7.3':
+    resolution: {integrity: sha512-unNCDqUKjujYkkSxs7gFIfdasttbDC4+z0kYmcqzRk6yWVoQBL4dNLcCbdnJS+qvVDNdI9rHp2NwpQ0WAdla4Q==}
+    engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [win32]
 
-  '@biomejs/cli-win32-x64@1.5.3':
-    resolution: {integrity: sha512-fMvbSouZEASU7mZH8SIJSANDm5OqsjgtVXlbUqxwed6BP7uuHRSs396Aqwh2+VoW8fwTpp6ybIUoC9FrzB0kyA==}
-    engines: {node: '>=14.*'}
+  '@biomejs/cli-win32-x64@1.7.3':
+    resolution: {integrity: sha512-ZmByhbrnmz/UUFYB622CECwhKIPjJLLPr5zr3edhu04LzbfcOrz16VYeNq5dpO1ADG70FORhAJkaIGdaVBG00w==}
+    engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [win32]
 
@@ -3541,6 +3541,15 @@ packages:
 
   debug@4.3.4:
     resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
+    engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+
+  debug@4.3.5:
+    resolution: {integrity: sha512-pt0bNEmneDIvdL1Xsd9oDQ/wrQRkXDT4AUWlNZNPKvW5x/jyO9VFXkJUP07vQ2upmw5PlaITaPKc31jK13V+jg==}
     engines: {node: '>=6.0'}
     peerDependencies:
       supports-color: '*'
@@ -6215,6 +6224,11 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
+  semver@7.6.2:
+    resolution: {integrity: sha512-FNAIBWCx9qcRhoHcgcJ0gvU7SN1lYU2ZXuSfl04bSC5OpvDHFyJCjdNHomPXxjQlCBU67YW64PzY7/VIEH7F2w==}
+    engines: {node: '>=10'}
+    hasBin: true
+
   send@0.18.0:
     resolution: {integrity: sha512-qqWzuOjSFOuqPjFe4NOsMLafToQQwBSOEpS+FwEt3A2V3vKubTquT3vmLTQpFgMXp8AlFWFuP1qKaJZOtPpVXg==}
     engines: {node: '>= 0.8.0'}
@@ -7611,39 +7625,39 @@ snapshots:
       '@babel/helper-validator-identifier': 7.22.20
       to-fast-properties: 2.0.0
 
-  '@biomejs/biome@1.5.3':
+  '@biomejs/biome@1.7.3':
     optionalDependencies:
-      '@biomejs/cli-darwin-arm64': 1.5.3
-      '@biomejs/cli-darwin-x64': 1.5.3
-      '@biomejs/cli-linux-arm64': 1.5.3
-      '@biomejs/cli-linux-arm64-musl': 1.5.3
-      '@biomejs/cli-linux-x64': 1.5.3
-      '@biomejs/cli-linux-x64-musl': 1.5.3
-      '@biomejs/cli-win32-arm64': 1.5.3
-      '@biomejs/cli-win32-x64': 1.5.3
+      '@biomejs/cli-darwin-arm64': 1.7.3
+      '@biomejs/cli-darwin-x64': 1.7.3
+      '@biomejs/cli-linux-arm64': 1.7.3
+      '@biomejs/cli-linux-arm64-musl': 1.7.3
+      '@biomejs/cli-linux-x64': 1.7.3
+      '@biomejs/cli-linux-x64-musl': 1.7.3
+      '@biomejs/cli-win32-arm64': 1.7.3
+      '@biomejs/cli-win32-x64': 1.7.3
 
-  '@biomejs/cli-darwin-arm64@1.5.3':
+  '@biomejs/cli-darwin-arm64@1.7.3':
     optional: true
 
-  '@biomejs/cli-darwin-x64@1.5.3':
+  '@biomejs/cli-darwin-x64@1.7.3':
     optional: true
 
-  '@biomejs/cli-linux-arm64-musl@1.5.3':
+  '@biomejs/cli-linux-arm64-musl@1.7.3':
     optional: true
 
-  '@biomejs/cli-linux-arm64@1.5.3':
+  '@biomejs/cli-linux-arm64@1.7.3':
     optional: true
 
-  '@biomejs/cli-linux-x64-musl@1.5.3':
+  '@biomejs/cli-linux-x64-musl@1.7.3':
     optional: true
 
-  '@biomejs/cli-linux-x64@1.5.3':
+  '@biomejs/cli-linux-x64@1.7.3':
     optional: true
 
-  '@biomejs/cli-win32-arm64@1.5.3':
+  '@biomejs/cli-win32-arm64@1.7.3':
     optional: true
 
-  '@biomejs/cli-win32-x64@1.5.3':
+  '@biomejs/cli-win32-x64@1.7.3':
     optional: true
 
   '@chevrotain/cst-dts-gen@10.5.0':
@@ -7686,16 +7700,16 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@cloudflare/vitest-pool-workers@0.1.2(@cloudflare/workers-types@4.20240405.0)(@vitest/runner@1.3.0)(@vitest/snapshot@1.3.0)(vitest@1.3.0)':
+  '@cloudflare/vitest-pool-workers@0.1.2(@cloudflare/workers-types@4.20240405.0)(@vitest/runner@1.5.0)(@vitest/snapshot@1.5.0)(vitest@1.3.0(@types/node@20.12.7))':
     dependencies:
-      '@vitest/runner': 1.3.0
-      '@vitest/snapshot': 1.3.0
+      '@vitest/runner': 1.5.0
+      '@vitest/snapshot': 1.5.0
       birpc: 0.2.14
       cjs-module-lexer: 1.2.3
       devalue: 4.3.2
       esbuild: 0.17.19
       miniflare: 3.20240304.2
-      vitest: 1.3.0
+      vitest: 1.3.0(@types/node@20.12.7)
       wrangler: 3.34.2(@cloudflare/workers-types@4.20240405.0)
       zod: 3.23.4
     transitivePeerDependencies:
@@ -7704,16 +7718,16 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@cloudflare/vitest-pool-workers@0.1.2(@cloudflare/workers-types@4.20240423.0)(@vitest/runner@1.3.0)(@vitest/snapshot@1.3.0)(vitest@1.3.0)':
+  '@cloudflare/vitest-pool-workers@0.1.2(@cloudflare/workers-types@4.20240423.0)(@vitest/runner@1.5.0)(@vitest/snapshot@1.5.0)(vitest@1.3.0(@types/node@20.12.7))':
     dependencies:
-      '@vitest/runner': 1.3.0
-      '@vitest/snapshot': 1.3.0
+      '@vitest/runner': 1.5.0
+      '@vitest/snapshot': 1.5.0
       birpc: 0.2.14
       cjs-module-lexer: 1.2.3
       devalue: 4.3.2
       esbuild: 0.17.19
       miniflare: 3.20240304.2
-      vitest: 1.3.0
+      vitest: 1.3.0(@types/node@20.12.7)
       wrangler: 3.34.2(@cloudflare/workers-types@4.20240423.0)
       zod: 3.23.4
     transitivePeerDependencies:
@@ -8573,9 +8587,8 @@ snapshots:
 
   '@jspm/core@2.0.1': {}
 
-  '@langchain/community@0.0.48(@cloudflare/ai@1.1.0)':
+  '@langchain/community@0.0.48(@cloudflare/ai@1.1.0)(jsonwebtoken@9.0.2)(lodash@4.17.21)(ws@8.16.0)':
     dependencies:
-      '@cloudflare/ai': 1.1.0
       '@langchain/core': 0.1.57
       '@langchain/openai': 0.0.28
       expr-eval: 2.0.2
@@ -8584,6 +8597,11 @@ snapshots:
       uuid: 9.0.1
       zod: 3.22.4
       zod-to-json-schema: 3.22.5(zod@3.22.4)
+    optionalDependencies:
+      '@cloudflare/ai': 1.1.0
+      jsonwebtoken: 9.0.2
+      lodash: 4.17.21
+      ws: 8.16.0
     transitivePeerDependencies:
       - encoding
 
@@ -8838,6 +8856,7 @@ snapshots:
     dependencies:
       '@cloudflare/workers-types': 4.20240222.0
       '@remix-run/cloudflare': 2.8.0(@cloudflare/workers-types@4.20240222.0)(typescript@5.3.3)
+    optionalDependencies:
       typescript: 5.3.3
 
   '@remix-run/cloudflare@2.8.0(@cloudflare/workers-types@4.20240222.0)(typescript@5.3.3)':
@@ -8845,9 +8864,10 @@ snapshots:
       '@cloudflare/kv-asset-handler': 0.1.3
       '@cloudflare/workers-types': 4.20240222.0
       '@remix-run/server-runtime': 2.8.0(typescript@5.3.3)
+    optionalDependencies:
       typescript: 5.3.3
 
-  '@remix-run/dev@2.8.0(typescript@5.3.3)(vite@5.1.7)(wrangler@3.30.1)':
+  '@remix-run/dev@2.8.0(@types/node@20.12.7)(ts-node@10.9.2(@types/node@20.12.7)(typescript@5.3.3))(typescript@5.3.3)(vite@5.1.7(@types/node@20.12.7))(wrangler@3.30.1(@cloudflare/workers-types@4.20240222.0))':
     dependencies:
       '@babel/core': 7.23.9
       '@babel/generator': 7.23.6
@@ -8863,7 +8883,7 @@ snapshots:
       '@remix-run/router': 1.15.2
       '@remix-run/server-runtime': 2.8.0(typescript@5.3.3)
       '@types/mdx': 2.0.11
-      '@vanilla-extract/integration': 6.5.0
+      '@vanilla-extract/integration': 6.5.0(@types/node@20.12.7)
       arg: 5.0.2
       cacache: 17.1.4
       chalk: 4.1.2
@@ -8890,7 +8910,7 @@ snapshots:
       pidtree: 0.6.0
       postcss: 8.4.35
       postcss-discard-duplicates: 5.1.0(postcss@8.4.35)
-      postcss-load-config: 4.0.2(postcss@8.4.35)
+      postcss-load-config: 4.0.2(postcss@8.4.35)(ts-node@10.9.2(@types/node@20.12.7)(typescript@5.3.3))
       postcss-modules: 6.0.0(postcss@8.4.35)
       prettier: 2.8.8
       pretty-ms: 7.0.1
@@ -8901,10 +8921,11 @@ snapshots:
       set-cookie-parser: 2.6.0
       tar-fs: 2.1.1
       tsconfig-paths: 4.2.0
-      typescript: 5.3.3
-      vite: 5.1.7
-      wrangler: 3.30.1(@cloudflare/workers-types@4.20240222.0)
       ws: 7.5.9
+    optionalDependencies:
+      typescript: 5.3.3
+      vite: 5.1.7(@types/node@20.12.7)
+      wrangler: 3.30.1(@cloudflare/workers-types@4.20240222.0)
     transitivePeerDependencies:
       - '@types/node'
       - bluebird
@@ -8929,16 +8950,18 @@ snapshots:
       cookie-signature: 1.2.1
       source-map-support: 0.5.21
       stream-slice: 0.1.2
+    optionalDependencies:
       typescript: 5.3.3
 
-  '@remix-run/react@2.8.0(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)':
+  '@remix-run/react@2.8.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@5.3.3)':
     dependencies:
       '@remix-run/router': 1.15.2
       '@remix-run/server-runtime': 2.8.0(typescript@5.3.3)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       react-router: 6.22.2(react@18.2.0)
-      react-router-dom: 6.22.2(react-dom@18.2.0)(react@18.2.0)
+      react-router-dom: 6.22.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+    optionalDependencies:
       typescript: 5.3.3
 
   '@remix-run/router@1.15.2': {}
@@ -8951,6 +8974,7 @@ snapshots:
       cookie: 0.6.0
       set-cookie-parser: 2.6.0
       source-map: 0.7.4
+    optionalDependencies:
       typescript: 5.3.3
 
   '@remix-run/web-blob@3.1.0':
@@ -9212,7 +9236,7 @@ snapshots:
     dependencies:
       '@types/node': 20.12.7
 
-  '@typescript-eslint/eslint-plugin@7.1.0(@typescript-eslint/parser@7.7.1)(eslint@8.57.0)(typescript@5.3.3)':
+  '@typescript-eslint/eslint-plugin@7.1.0(@typescript-eslint/parser@7.7.1(eslint@8.57.0)(typescript@5.3.3))(eslint@8.57.0)(typescript@5.3.3)':
     dependencies:
       '@eslint-community/regexpp': 4.10.0
       '@typescript-eslint/parser': 7.7.1(eslint@8.57.0)(typescript@5.3.3)
@@ -9227,6 +9251,7 @@ snapshots:
       natural-compare: 1.4.0
       semver: 7.5.4
       ts-api-utils: 1.2.1(typescript@5.3.3)
+    optionalDependencies:
       typescript: 5.3.3
     transitivePeerDependencies:
       - supports-color
@@ -9237,8 +9262,9 @@ snapshots:
       '@typescript-eslint/types': 7.7.1
       '@typescript-eslint/typescript-estree': 7.7.1(typescript@5.3.3)
       '@typescript-eslint/visitor-keys': 7.7.1
-      debug: 4.3.4
+      debug: 4.3.5
       eslint: 8.57.0
+    optionalDependencies:
       typescript: 5.3.3
     transitivePeerDependencies:
       - supports-color
@@ -9260,6 +9286,7 @@ snapshots:
       debug: 4.3.4
       eslint: 8.57.0
       ts-api-utils: 1.2.1(typescript@5.3.3)
+    optionalDependencies:
       typescript: 5.3.3
     transitivePeerDependencies:
       - supports-color
@@ -9278,6 +9305,7 @@ snapshots:
       minimatch: 9.0.3
       semver: 7.6.0
       ts-api-utils: 1.2.1(typescript@5.3.3)
+    optionalDependencies:
       typescript: 5.3.3
     transitivePeerDependencies:
       - supports-color
@@ -9286,12 +9314,13 @@ snapshots:
     dependencies:
       '@typescript-eslint/types': 7.7.1
       '@typescript-eslint/visitor-keys': 7.7.1
-      debug: 4.3.4
+      debug: 4.3.5
       globby: 11.1.0
       is-glob: 4.0.3
       minimatch: 9.0.4
-      semver: 7.6.0
+      semver: 7.6.2
       ts-api-utils: 1.3.0(typescript@5.3.3)
+    optionalDependencies:
       typescript: 5.3.3
     transitivePeerDependencies:
       - supports-color
@@ -9342,7 +9371,7 @@ snapshots:
       modern-ahocorasick: 1.0.1
       outdent: 0.8.0
 
-  '@vanilla-extract/integration@6.5.0':
+  '@vanilla-extract/integration@6.5.0(@types/node@20.12.7)':
     dependencies:
       '@babel/core': 7.23.9
       '@babel/plugin-syntax-typescript': 7.23.3(@babel/core@7.23.9)
@@ -9355,8 +9384,8 @@ snapshots:
       lodash: 4.17.21
       mlly: 1.4.2
       outdent: 0.8.0
-      vite: 5.1.7
-      vite-node: 1.3.1
+      vite: 5.1.7(@types/node@20.12.7)
+      vite-node: 1.3.1(@types/node@20.12.7)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -10101,6 +10130,7 @@ snapshots:
       js-yaml: 4.1.0
       parse-json: 5.2.0
       path-type: 4.0.0
+    optionalDependencies:
       typescript: 5.4.5
 
   crc-32@1.2.2: {}
@@ -10179,6 +10209,10 @@ snapshots:
       ms: 2.1.3
 
   debug@4.3.4:
+    dependencies:
+      ms: 2.1.2
+
+  debug@4.3.5:
     dependencies:
       ms: 2.1.2
 
@@ -10549,13 +10583,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@7.7.1)(eslint-plugin-import@2.29.1)(eslint@8.57.0):
+  eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@7.7.1(eslint@8.57.0)(typescript@5.3.3))(eslint-plugin-import@2.29.1)(eslint@8.57.0):
     dependencies:
       debug: 4.3.4
       enhanced-resolve: 5.15.0
       eslint: 8.57.0
-      eslint-module-utils: 2.8.0(@typescript-eslint/parser@7.7.1)(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
-      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.7.1)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
+      eslint-module-utils: 2.8.0(@typescript-eslint/parser@7.7.1(eslint@8.57.0)(typescript@5.3.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@7.7.1(eslint@8.57.0)(typescript@5.3.3))(eslint-plugin-import@2.29.1)(eslint@8.57.0))(eslint@8.57.0)
+      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.7.1(eslint@8.57.0)(typescript@5.3.3))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
       fast-glob: 3.3.2
       get-tsconfig: 4.7.2
       is-core-module: 2.13.1
@@ -10566,19 +10600,19 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-module-utils@2.8.0(@typescript-eslint/parser@7.7.1)(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0):
+  eslint-module-utils@2.8.0(@typescript-eslint/parser@7.7.1(eslint@8.57.0)(typescript@5.3.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@7.7.1(eslint@8.57.0)(typescript@5.3.3))(eslint-plugin-import@2.29.1)(eslint@8.57.0))(eslint@8.57.0):
     dependencies:
-      '@typescript-eslint/parser': 7.7.1(eslint@8.57.0)(typescript@5.3.3)
       debug: 3.2.7
+    optionalDependencies:
+      '@typescript-eslint/parser': 7.7.1(eslint@8.57.0)(typescript@5.3.3)
       eslint: 8.57.0
       eslint-import-resolver-node: 0.3.9
-      eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@7.7.1)(eslint-plugin-import@2.29.1)(eslint@8.57.0)
+      eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@7.7.1(eslint@8.57.0)(typescript@5.3.3))(eslint-plugin-import@2.29.1)(eslint@8.57.0)
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.7.1)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0):
+  eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.7.1(eslint@8.57.0)(typescript@5.3.3))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0):
     dependencies:
-      '@typescript-eslint/parser': 7.7.1(eslint@8.57.0)(typescript@5.3.3)
       array-includes: 3.1.7
       array.prototype.findlastindex: 1.2.4
       array.prototype.flat: 1.3.2
@@ -10587,7 +10621,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 8.57.0
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.8.0(@typescript-eslint/parser@7.7.1)(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
+      eslint-module-utils: 2.8.0(@typescript-eslint/parser@7.7.1(eslint@8.57.0)(typescript@5.3.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@7.7.1(eslint@8.57.0)(typescript@5.3.3))(eslint-plugin-import@2.29.1)(eslint@8.57.0))(eslint@8.57.0)
       hasown: 2.0.1
       is-core-module: 2.13.1
       is-glob: 4.0.3
@@ -10597,6 +10631,8 @@ snapshots:
       object.values: 1.1.7
       semver: 6.3.1
       tsconfig-paths: 3.15.0
+    optionalDependencies:
+      '@typescript-eslint/parser': 7.7.1(eslint@8.57.0)(typescript@5.3.3)
     transitivePeerDependencies:
       - eslint-import-resolver-typescript
       - eslint-import-resolver-webpack
@@ -11682,14 +11718,13 @@ snapshots:
 
   kysely@0.27.2: {}
 
-  langchain@0.1.33(@cloudflare/ai@1.1.0)(cheerio@1.0.0-rc.12):
+  langchain@0.1.33(@cloudflare/ai@1.1.0)(cheerio@1.0.0-rc.12)(fast-xml-parser@4.3.5)(ignore@5.3.0)(jsonwebtoken@9.0.2)(lodash@4.17.21)(ws@8.16.0):
     dependencies:
       '@anthropic-ai/sdk': 0.9.1
-      '@langchain/community': 0.0.48(@cloudflare/ai@1.1.0)
+      '@langchain/community': 0.0.48(@cloudflare/ai@1.1.0)(jsonwebtoken@9.0.2)(lodash@4.17.21)(ws@8.16.0)
       '@langchain/core': 0.1.57
       '@langchain/openai': 0.0.28
       binary-extensions: 2.3.0
-      cheerio: 1.0.0-rc.12
       js-tiktoken: 1.0.11
       js-yaml: 4.1.0
       jsonpointer: 5.0.1
@@ -11702,6 +11737,11 @@ snapshots:
       yaml: 2.4.1
       zod: 3.22.4
       zod-to-json-schema: 3.22.5(zod@3.22.4)
+    optionalDependencies:
+      cheerio: 1.0.0-rc.12
+      fast-xml-parser: 4.3.5
+      ignore: 5.3.0
+      ws: 8.16.0
     transitivePeerDependencies:
       - '@aws-crypto/sha256-js'
       - '@aws-sdk/client-bedrock-agent-runtime'
@@ -12069,7 +12109,7 @@ snapshots:
   merge2@1.4.1: {}
 
   meros@1.3.0(@types/node@20.12.7):
-    dependencies:
+    optionalDependencies:
       '@types/node': 20.12.7
 
   methods@1.1.2: {}
@@ -12875,11 +12915,13 @@ snapshots:
     dependencies:
       postcss: 8.4.35
 
-  postcss-load-config@4.0.2(postcss@8.4.35):
+  postcss-load-config@4.0.2(postcss@8.4.35)(ts-node@10.9.2(@types/node@20.12.7)(typescript@5.3.3)):
     dependencies:
       lilconfig: 3.1.1
-      postcss: 8.4.35
       yaml: 2.3.4
+    optionalDependencies:
+      postcss: 8.4.35
+      ts-node: 10.9.2(@types/node@20.12.7)(typescript@5.3.3)
 
   postcss-modules-extract-imports@3.0.0(postcss@8.4.35):
     dependencies:
@@ -13056,7 +13098,7 @@ snapshots:
 
   react-refresh@0.14.0: {}
 
-  react-router-dom@6.22.2(react-dom@18.2.0)(react@18.2.0):
+  react-router-dom@6.22.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
       '@remix-run/router': 1.15.2
       react: 18.2.0
@@ -13352,6 +13394,8 @@ snapshots:
   semver@7.6.0:
     dependencies:
       lru-cache: 6.0.0
+
+  semver@7.6.2: {}
 
   send@0.18.0:
     dependencies:
@@ -13732,6 +13776,25 @@ snapshots:
 
   ts-log@2.2.5: {}
 
+  ts-node@10.9.2(@types/node@20.12.7)(typescript@5.3.3):
+    dependencies:
+      '@cspotcode/source-map-support': 0.8.1
+      '@tsconfig/node10': 1.0.9
+      '@tsconfig/node12': 1.0.11
+      '@tsconfig/node14': 1.0.3
+      '@tsconfig/node16': 1.0.4
+      '@types/node': 20.12.7
+      acorn: 8.11.3
+      acorn-walk: 8.3.2
+      arg: 4.1.3
+      create-require: 1.1.1
+      diff: 4.0.2
+      make-error: 1.3.6
+      typescript: 5.3.3
+      v8-compile-cache-lib: 3.0.1
+      yn: 3.1.1
+    optional: true
+
   ts-node@10.9.2(@types/node@20.12.7)(typescript@5.4.5):
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
@@ -13753,7 +13816,7 @@ snapshots:
   ts-pattern@4.3.0: {}
 
   tsconfck@3.0.2(typescript@5.3.3):
-    dependencies:
+    optionalDependencies:
       typescript: 5.3.3
 
   tsconfig-paths@3.15.0:
@@ -13993,13 +14056,13 @@ snapshots:
       unist-util-stringify-position: 3.0.3
       vfile-message: 3.1.4
 
-  vite-node@1.3.0:
+  vite-node@1.3.0(@types/node@20.12.7):
     dependencies:
       cac: 6.7.14
       debug: 4.3.4
       pathe: 1.1.2
       picocolors: 1.0.0
-      vite: 5.2.8
+      vite: 5.2.8(@types/node@20.12.7)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -14010,13 +14073,13 @@ snapshots:
       - supports-color
       - terser
 
-  vite-node@1.3.1:
+  vite-node@1.3.1(@types/node@20.12.7):
     dependencies:
       cac: 6.7.14
       debug: 4.3.4
       pathe: 1.1.1
       picocolors: 1.0.0
-      vite: 5.1.7
+      vite: 5.1.7(@types/node@20.12.7)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -14027,13 +14090,13 @@ snapshots:
       - supports-color
       - terser
 
-  vite-node@1.5.0:
+  vite-node@1.5.0(@types/node@20.12.7):
     dependencies:
       cac: 6.7.14
       debug: 4.3.4
       pathe: 1.1.2
       picocolors: 1.0.0
-      vite: 5.2.8
+      vite: 5.2.8(@types/node@20.12.7)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -14044,33 +14107,36 @@ snapshots:
       - supports-color
       - terser
 
-  vite-tsconfig-paths@4.3.1(typescript@5.3.3)(vite@5.1.7):
+  vite-tsconfig-paths@4.3.1(typescript@5.3.3)(vite@5.1.7(@types/node@20.12.7)):
     dependencies:
       debug: 4.3.4
       globrex: 0.1.2
       tsconfck: 3.0.2(typescript@5.3.3)
-      vite: 5.1.7
+    optionalDependencies:
+      vite: 5.1.7(@types/node@20.12.7)
     transitivePeerDependencies:
       - supports-color
       - typescript
 
-  vite@5.1.7:
+  vite@5.1.7(@types/node@20.12.7):
     dependencies:
       esbuild: 0.19.8
       postcss: 8.4.35
       rollup: 4.6.1
     optionalDependencies:
+      '@types/node': 20.12.7
       fsevents: 2.3.3
 
-  vite@5.2.8:
+  vite@5.2.8(@types/node@20.12.7):
     dependencies:
       esbuild: 0.20.2
       postcss: 8.4.38
       rollup: 4.14.2
     optionalDependencies:
+      '@types/node': 20.12.7
       fsevents: 2.3.3
 
-  vitest@1.3.0:
+  vitest@1.3.0(@types/node@20.12.7):
     dependencies:
       '@vitest/expect': 1.3.0
       '@vitest/runner': 1.3.0
@@ -14089,9 +14155,11 @@ snapshots:
       strip-literal: 2.1.0
       tinybench: 2.6.0
       tinypool: 0.8.3
-      vite: 5.2.8
-      vite-node: 1.3.0
+      vite: 5.2.8(@types/node@20.12.7)
+      vite-node: 1.3.0(@types/node@20.12.7)
       why-is-node-running: 2.2.2
+    optionalDependencies:
+      '@types/node': 20.12.7
     transitivePeerDependencies:
       - less
       - lightningcss
@@ -14101,7 +14169,7 @@ snapshots:
       - supports-color
       - terser
 
-  vitest@1.5.0:
+  vitest@1.5.0(@types/node@20.12.7):
     dependencies:
       '@vitest/expect': 1.5.0
       '@vitest/runner': 1.5.0
@@ -14120,9 +14188,11 @@ snapshots:
       strip-literal: 2.1.0
       tinybench: 2.6.0
       tinypool: 0.8.3
-      vite: 5.2.8
-      vite-node: 1.5.0
+      vite: 5.2.8(@types/node@20.12.7)
+      vite-node: 1.5.0(@types/node@20.12.7)
       why-is-node-running: 2.2.2
+    optionalDependencies:
+      '@types/node': 20.12.7
     transitivePeerDependencies:
       - less
       - lightningcss
@@ -14259,7 +14329,6 @@ snapshots:
   wrangler@3.30.1(@cloudflare/workers-types@4.20240222.0):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.3.1
-      '@cloudflare/workers-types': 4.20240222.0
       '@esbuild-plugins/node-globals-polyfill': 0.2.3(esbuild@0.17.19)
       '@esbuild-plugins/node-modules-polyfill': 0.2.2(esbuild@0.17.19)
       blake3-wasm: 2.1.5
@@ -14274,6 +14343,7 @@ snapshots:
       source-map: 0.6.1
       xxhash-wasm: 1.0.2
     optionalDependencies:
+      '@cloudflare/workers-types': 4.20240222.0
       fsevents: 2.3.3
     transitivePeerDependencies:
       - bufferutil
@@ -14283,7 +14353,6 @@ snapshots:
   wrangler@3.30.1(@cloudflare/workers-types@4.20240405.0):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.3.1
-      '@cloudflare/workers-types': 4.20240405.0
       '@esbuild-plugins/node-globals-polyfill': 0.2.3(esbuild@0.17.19)
       '@esbuild-plugins/node-modules-polyfill': 0.2.2(esbuild@0.17.19)
       blake3-wasm: 2.1.5
@@ -14298,6 +14367,7 @@ snapshots:
       source-map: 0.6.1
       xxhash-wasm: 1.0.2
     optionalDependencies:
+      '@cloudflare/workers-types': 4.20240405.0
       fsevents: 2.3.3
     transitivePeerDependencies:
       - bufferutil
@@ -14307,7 +14377,6 @@ snapshots:
   wrangler@3.34.2(@cloudflare/workers-types@4.20240405.0):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.3.1
-      '@cloudflare/workers-types': 4.20240405.0
       '@esbuild-plugins/node-globals-polyfill': 0.2.3(esbuild@0.17.19)
       '@esbuild-plugins/node-modules-polyfill': 0.2.2(esbuild@0.17.19)
       blake3-wasm: 2.1.5
@@ -14322,6 +14391,7 @@ snapshots:
       source-map: 0.6.1
       xxhash-wasm: 1.0.2
     optionalDependencies:
+      '@cloudflare/workers-types': 4.20240405.0
       fsevents: 2.3.3
     transitivePeerDependencies:
       - bufferutil
@@ -14331,7 +14401,6 @@ snapshots:
   wrangler@3.34.2(@cloudflare/workers-types@4.20240423.0):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.3.1
-      '@cloudflare/workers-types': 4.20240423.0
       '@esbuild-plugins/node-globals-polyfill': 0.2.3(esbuild@0.17.19)
       '@esbuild-plugins/node-modules-polyfill': 0.2.2(esbuild@0.17.19)
       blake3-wasm: 2.1.5
@@ -14346,6 +14415,7 @@ snapshots:
       source-map: 0.6.1
       xxhash-wasm: 1.0.2
     optionalDependencies:
+      '@cloudflare/workers-types': 4.20240423.0
       fsevents: 2.3.3
     transitivePeerDependencies:
       - bufferutil
@@ -14355,7 +14425,6 @@ snapshots:
   wrangler@3.50.0(@cloudflare/workers-types@4.20240405.0):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.3.1
-      '@cloudflare/workers-types': 4.20240405.0
       '@esbuild-plugins/node-globals-polyfill': 0.2.3(esbuild@0.17.19)
       '@esbuild-plugins/node-modules-polyfill': 0.2.2(esbuild@0.17.19)
       blake3-wasm: 2.1.5
@@ -14371,6 +14440,7 @@ snapshots:
       ts-json-schema-generator: 1.5.1
       xxhash-wasm: 1.0.2
     optionalDependencies:
+      '@cloudflare/workers-types': 4.20240405.0
       fsevents: 2.3.3
     transitivePeerDependencies:
       - bufferutil
@@ -14380,7 +14450,6 @@ snapshots:
   wrangler@3.52.0(@cloudflare/workers-types@4.20240423.0):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.3.2
-      '@cloudflare/workers-types': 4.20240423.0
       '@esbuild-plugins/node-globals-polyfill': 0.2.3(esbuild@0.17.19)
       '@esbuild-plugins/node-modules-polyfill': 0.2.2(esbuild@0.17.19)
       blake3-wasm: 2.1.5
@@ -14395,6 +14464,7 @@ snapshots:
       source-map: 0.6.1
       xxhash-wasm: 1.0.2
     optionalDependencies:
+      '@cloudflare/workers-types': 4.20240423.0
       fsevents: 2.3.3
     transitivePeerDependencies:
       - bufferutil

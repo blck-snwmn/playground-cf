@@ -9,7 +9,7 @@
 		"moduleResolution": "Bundler" /* Specify how TypeScript looks up a file from a given module specifier. */,
 		"types": [
 			"@cloudflare/workers-types/2023-07-01",
-			"@cloudflare/vitest-pool-workers",
+			"@cloudflare/vitest-pool-workers"
 		] /* Specify type package names to be included without being referenced in a source file. */,
 		"resolveJsonModule": true /* Enable importing .json files */,
 		"allowJs": true /* Allow JavaScript files to be a part of your program. Use the `checkJS` option to get errors from these files. */,
@@ -21,7 +21,5 @@
 		"strict": true /* Enable all strict type-checking options. */,
 		"skipLibCheck": true /* Skip type checking all .d.ts files. */
 	},
-	"exclude": [
-		"test"
-	],
+	"exclude": ["test"]
 }

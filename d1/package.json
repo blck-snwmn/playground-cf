@@ -1,16 +1,16 @@
 {
-  "name": "hello-d1",
-  "version": "0.0.0",
-  "devDependencies": {
-    "@cloudflare/workers-types": "^4.20240222.0",
-    "typescript": "^5.3.3",
-    "vitest": "^1.3.1",
-    "wrangler": "3.30.1"
-  },
-  "private": true,
-  "scripts": {
-    "start": "wrangler dev",
-    "deploy": "wrangler publish",
-    "test": "vitest"
-  }
+	"name": "hello-d1",
+	"version": "0.0.0",
+	"devDependencies": {
+		"@cloudflare/workers-types": "^4.20240222.0",
+		"typescript": "^5.3.3",
+		"vitest": "^1.3.1",
+		"wrangler": "3.30.1"
+	},
+	"private": true,
+	"scripts": {
+		"start": "wrangler dev",
+		"deploy": "wrangler publish",
+		"test": "vitest"
+	}
 }
