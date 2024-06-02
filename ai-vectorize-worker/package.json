@@ -9,10 +9,10 @@
 	"devDependencies": {
 		"@cloudflare/workers-types": "^4.20240222.0",
 		"typescript": "^5.3.3",
-		"wrangler": "^3.30.1"
+		"wrangler": "^3.58.0"
 	},
 	"dependencies": {
-		"@cloudflare/ai": "^1.0.53",
+		"@cloudflare/ai": "^1.2.2",
 		"cheerio": "^1.0.0-rc.12",
 		"langchain": "^0.1.25"
 	}
