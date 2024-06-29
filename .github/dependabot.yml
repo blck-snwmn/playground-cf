@@ -10,6 +10,9 @@ updates:
       dependencies:
         patterns:
           - "*"
+    allow:
+      - dependency-name: "vitest"
+        versions: [ "1.3.0" ]
   - package-ecosystem: "github-actions"
     directory: "/"
     assignees:
