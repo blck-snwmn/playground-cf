@@ -1,5 +1,5 @@
 import * as jwt from "jsonwebtoken";
-import * as jwksClient from "jwks-rsa";
+import jwksClient from "jwks-rsa";
 
 export interface Env {
 	POLICY_AUD: string;
@@ -23,6 +23,7 @@ export default {
 		const client = jwksClient({
 			jwksUri: `${env.TEAM_DOMAIN}/cdn-cgi/access/certs`,
 		});
+
 		const getKey = (
 			header: jwt.JwtHeader,
 			callback: jwt.SigningKeyCallback,
@@ -31,7 +32,6 @@ export default {
 				callback(err, key?.getPublicKey());
 			});
 		};
-
 		const certsURL = `${env.TEAM_DOMAIN}/cdn-cgi/access/certs`;
 		jwt.verify(token, getKey);
 		return new Response("Hello World!");

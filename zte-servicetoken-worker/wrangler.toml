@@ -1,6 +1,6 @@
 name = "hello-cf-servicetoken"
 main = "src/worker.ts"
-compatibility_date = "2023-06-11"
+compatibility_date = "2024-09-10"
 
-compatibility_flags = [ "nodejs_compat" ]
+compatibility_flags = [ "nodejs_compat_v2" ]
 workers_dev = false
