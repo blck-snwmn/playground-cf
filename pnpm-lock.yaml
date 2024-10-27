@@ -93,8 +93,8 @@ importers:
         specifier: ^0.1.5
         version: 0.1.5
       hono:
-        specifier: ^4.2.7
-        version: 4.2.7
+        specifier: ^4.6.5
+        version: 4.6.5
     devDependencies:
       '@cloudflare/ai':
         specifier: ^1.1.0
@@ -520,8 +520,8 @@ importers:
   r2-imageuploader:
     dependencies:
       hono:
-        specifier: ^4.2.7
-        version: 4.2.7
+        specifier: ^4.6.5
+        version: 4.6.5
     devDependencies:
       '@cloudflare/workers-types':
         specifier: ^4.20240222.0
@@ -664,8 +664,8 @@ importers:
   stream-manager:
     dependencies:
       hono:
-        specifier: ^4.2.7
-        version: 4.2.7
+        specifier: ^4.6.5
+        version: 4.6.5
     devDependencies:
       '@cloudflare/workers-types':
         specifier: ^4.20240222.0
@@ -838,8 +838,8 @@ importers:
   zte-worker:
     dependencies:
       hono:
-        specifier: ^4.2.7
-        version: 4.2.7
+        specifier: ^4.6.5
+        version: 4.6.5
       jose:
         specifier: ^5.2.4
         version: 5.2.4
@@ -5058,9 +5058,9 @@ packages:
     resolution: {integrity: sha512-Ox1pJVrDCyGHMG9CFg1tmrRUMRPRsAWYc/PinY0XzJU4K7y7vjNoLKIQ7BR5UJMCxNN8EM1MNDmHWA/B3aZUuw==}
     engines: {node: '>=6'}
 
-  hono@4.2.7:
-    resolution: {integrity: sha512-k1xHi86tJnRIVvqhFMBDGFKJ8r5O+bEsT4P59ZK59r0F300Xd910/r237inVfuT/VmE86RQQffX4OYNda6dLXw==}
-    engines: {node: '>=16.0.0'}
+  hono@4.6.5:
+    resolution: {integrity: sha512-qsmN3V5fgtwdKARGLgwwHvcdLKursMd+YOt69eGpl1dUCJb8mCd7hZfyZnBYjxCegBG7qkJRQRUy2oO25yHcyQ==}
+    engines: {node: '>=16.9.0'}
 
   hosted-git-info@2.8.9:
     resolution: {integrity: sha512-mxIDAb9Lsm6DoOJ7xH+5+X4y1LU/4Hi50L9C5sIswK3JzULS4bwk1FvjdBgvYR4bzT4tuUQiC15FE2f5HbLvYw==}
@@ -13186,7 +13186,7 @@ snapshots:
 
   hex-rgb@4.3.0: {}
 
-  hono@4.2.7: {}
+  hono@4.6.5: {}
 
   hosted-git-info@2.8.9: {}
 
