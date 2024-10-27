@@ -338,7 +338,7 @@ importers:
         version: 4.20240725.0
       '@remix-run/dev':
         specifier: ^2.10.3
-        version: 2.10.3(@remix-run/react@2.10.3(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@5.4.5))(@types/node@20.12.7)(ts-node@10.9.2(@types/node@20.12.7)(typescript@5.4.5))(typescript@5.4.5)(vite@5.2.8(@types/node@20.12.7))(wrangler@3.57.1(@cloudflare/workers-types@4.20240725.0))
+        version: 2.10.3(@remix-run/react@2.10.3(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@5.4.5))(@types/node@20.12.7)(ts-node@10.9.2(@types/node@20.12.7)(typescript@5.4.5))(typescript@5.4.5)(vite@5.2.14(@types/node@20.12.7))(wrangler@3.57.1(@cloudflare/workers-types@4.20240725.0))
       '@types/react':
         specifier: ^18.2.20
         version: 18.2.61
@@ -382,11 +382,11 @@ importers:
         specifier: ^5.1.6
         version: 5.4.5
       vite:
-        specifier: ^5.1.0
-        version: 5.2.8(@types/node@20.12.7)
+        specifier: ^5.2.14
+        version: 5.2.14(@types/node@20.12.7)
       vite-tsconfig-paths:
         specifier: ^4.2.1
-        version: 4.3.1(typescript@5.4.5)(vite@5.2.8(@types/node@20.12.7))
+        version: 4.3.1(typescript@5.4.5)(vite@5.2.14(@types/node@20.12.7))
       wrangler:
         specifier: 3.57.1
         version: 3.57.1(@cloudflare/workers-types@4.20240725.0)
@@ -7937,6 +7937,34 @@ packages:
       terser:
         optional: true
 
+  vite@5.2.14:
+    resolution: {integrity: sha512-TFQLuwWLPms+NBNlh0D9LZQ+HXW471COABxw/9TEUBrjuHMo9BrYBPrN/SYAwIuVL+rLerycxiLT41t4f5MZpA==}
+    engines: {node: ^18.0.0 || >=20.0.0}
+    hasBin: true
+    peerDependencies:
+      '@types/node': ^18.0.0 || >=20.0.0
+      less: '*'
+      lightningcss: ^1.21.0
+      sass: '*'
+      stylus: '*'
+      sugarss: '*'
+      terser: ^5.4.0
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+      less:
+        optional: true
+      lightningcss:
+        optional: true
+      sass:
+        optional: true
+      stylus:
+        optional: true
+      sugarss:
+        optional: true
+      terser:
+        optional: true
+
   vite@5.2.8:
     resolution: {integrity: sha512-OyZR+c1CE8yeHw5V5t59aXsUPPVTHMDjEZz8MgguLL/Q7NblxhZUlTu9xSPqlsUO/y+X7dlU05jdhvyycD55DA==}
     engines: {node: ^18.0.0 || >=20.0.0}
@@ -10201,7 +10229,7 @@ snapshots:
     optionalDependencies:
       typescript: 5.3.3
 
-  '@remix-run/dev@2.10.3(@remix-run/react@2.10.3(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@5.4.5))(@types/node@20.12.7)(ts-node@10.9.2(@types/node@20.12.7)(typescript@5.4.5))(typescript@5.4.5)(vite@5.2.8(@types/node@20.12.7))(wrangler@3.57.1(@cloudflare/workers-types@4.20240725.0))':
+  '@remix-run/dev@2.10.3(@remix-run/react@2.10.3(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@5.4.5))(@types/node@20.12.7)(ts-node@10.9.2(@types/node@20.12.7)(typescript@5.4.5))(typescript@5.4.5)(vite@5.2.14(@types/node@20.12.7))(wrangler@3.57.1(@cloudflare/workers-types@4.20240725.0))':
     dependencies:
       '@babel/core': 7.23.9
       '@babel/generator': 7.23.6
@@ -10259,7 +10287,7 @@ snapshots:
       ws: 7.5.9
     optionalDependencies:
       typescript: 5.4.5
-      vite: 5.2.8(@types/node@20.12.7)
+      vite: 5.2.14(@types/node@20.12.7)
       wrangler: 3.57.1(@cloudflare/workers-types@4.20240725.0)
     transitivePeerDependencies:
       - '@types/node'
@@ -11027,7 +11055,7 @@ snapshots:
       lodash: 4.17.21
       mlly: 1.4.2
       outdent: 0.8.0
-      vite: 5.2.8(@types/node@20.12.7)
+      vite: 5.2.14(@types/node@20.12.7)
       vite-node: 1.3.1(@types/node@20.12.7)
     transitivePeerDependencies:
       - '@types/node'
@@ -16558,7 +16586,7 @@ snapshots:
       debug: 4.3.4
       pathe: 1.1.2
       picocolors: 1.0.1
-      vite: 5.2.8(@types/node@20.12.7)
+      vite: 5.2.14(@types/node@20.12.7)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -16575,7 +16603,7 @@ snapshots:
       debug: 4.3.5
       pathe: 1.1.2
       picocolors: 1.0.1
-      vite: 5.2.8(@types/node@20.12.7)
+      vite: 5.2.14(@types/node@20.12.7)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -16592,7 +16620,7 @@ snapshots:
       debug: 4.3.5
       pathe: 1.1.2
       picocolors: 1.0.1
-      vite: 5.2.8(@types/node@20.12.7)
+      vite: 5.2.14(@types/node@20.12.7)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -16614,13 +16642,13 @@ snapshots:
       - supports-color
       - typescript
 
-  vite-tsconfig-paths@4.3.1(typescript@5.4.5)(vite@5.2.8(@types/node@20.12.7)):
+  vite-tsconfig-paths@4.3.1(typescript@5.4.5)(vite@5.2.14(@types/node@20.12.7)):
     dependencies:
       debug: 4.3.4
       globrex: 0.1.2
       tsconfck: 3.0.2(typescript@5.4.5)
     optionalDependencies:
-      vite: 5.2.8(@types/node@20.12.7)
+      vite: 5.2.14(@types/node@20.12.7)
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -16630,6 +16658,15 @@ snapshots:
       esbuild: 0.19.8
       postcss: 8.4.38
       rollup: 4.6.1
+    optionalDependencies:
+      '@types/node': 20.12.7
+      fsevents: 2.3.3
+
+  vite@5.2.14(@types/node@20.12.7):
+    dependencies:
+      esbuild: 0.20.2
+      postcss: 8.4.38
+      rollup: 4.14.2
     optionalDependencies:
       '@types/node': 20.12.7
       fsevents: 2.3.3
