@@ -19,6 +19,6 @@
 	},
 	"dependencies": {
 		"fetch-event-stream": "^0.1.5",
-		"hono": "^4.2.7"
+		"hono": "^4.6.5"
 	}
 }
