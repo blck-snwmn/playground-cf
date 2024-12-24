@@ -1,0 +1,15 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "queue-delay"
+main = "src/index.ts"
+compatibility_date = "2024-12-18"
+compatibility_flags = ["nodejs_compat"]
+
+[observability]
+enabled = true
+
+[[queues.producers]]
+queue = "playground-queue-delay"
+binding = "playground_queue_delay"
+
+[[queues.consumers]]
+queue = "playground-queue-delay"
